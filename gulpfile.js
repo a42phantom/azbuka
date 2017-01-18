@@ -9,34 +9,38 @@ var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var moreCSS = require("gulp-more-css");
 var cssnano = require("gulp-cssnano");
-var pug = require('pug');
+var pug = require('gulp-pug');
 
 // Lint Task
 gulp.task("lint", function() {
   return gulp.src("js/*.js")
-    .pipe(jshint())
-    .pipe(jshint.reporter("default"));
+  .pipe(jshint())
+  .pipe(jshint.reporter("default"));
 });
 
 // Compile Our Sass
 gulp.task("sass", function() {
   return gulp.src("scss/*.scss")
-    .pipe(sass())
-    .pipe(cssnano())
-    .pipe(gulp.dest("dist/css"));
+  .pipe(sass())
+  .pipe(cssnano())
+  .pipe(gulp.dest("dist/css"));
 });
 
 // Concatenate & Minify JS
 gulp.task("scripts", function() {
   return gulp.src("js/*.js")
-    .pipe(uglify())
-    .pipe(gulp.dest("dist/js"));
+  .pipe(uglify())
+  .pipe(gulp.dest("dist/js"));
 });
- 
-gulp.task('pug', function buildHTML() {
+
+gulp.task('pug', function() { // buildHTML
   return gulp.src('pug/*.pug')
-  .pipe(pug({pretty: true}))
-  .pipe(gulp.dest("dist/*.html"));
+  .pipe(pug({
+      locals: '-P',
+      pretty: true
+    })
+  )
+  .pipe(gulp.dest("dist/"));
 });
 
 // Watch Files For Changes
