@@ -1,0 +1,31 @@
+{
+  "name": "azbuka",
+  "version": "1.0.0",
+  "description": "redesign for azbuka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a42phantom/azbuka.git"
+  },
+  "author": "a42phantom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a42phantom/azbuka/issues"
+  },
+  "homepage": "https://github.com/a42phantom/azbuka#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-more-css": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4",
+  }
+}
