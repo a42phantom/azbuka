@@ -9,6 +9,7 @@ var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var moreCSS = require("gulp-more-css");
 var cssnano = require("gulp-cssnano");
+var autoprefixer = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
 
 // Lint Task
@@ -20,10 +21,14 @@ gulp.task("lint", function() {
 
 // Compile Our Sass
 gulp.task("sass", function() {
-  return gulp.src("scss/*.scss")
+  return gulp.src("scss/**/*.scss")
+  .pipe(autoprefixer({
+      browsers: ['last 2 versions']
+  }))
   .pipe(sass())
   .pipe(cssnano())
-  .pipe(gulp.dest("dist/css"));
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(gulp.dest("dist/css/"));
 });
 
 // Concatenate & Minify JS
@@ -45,9 +50,9 @@ gulp.task('pug', function() { // buildHTML
 
 // Watch Files For Changes
 gulp.task("watch", function() {
-  gulp.watch("js/*.js", ["lint", "scripts"]);
-  gulp.watch("scss/*.scss", ["sass"]);
-  gulp.watch("pug/*.pug", ["pug"]);
+  gulp.watch("js/**/*.js", ["lint", "scripts"]);
+  gulp.watch("scss/**/*.scss", ["sass"]);
+  gulp.watch("pug/**/*.pug", ["pug"]);
 });
 
 // Default Task
