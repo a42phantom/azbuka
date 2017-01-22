@@ -1,6 +1,7 @@
 include ../mainPageSlider/mainPageSlider.pug
 include ../newsBlock/newsBlock.pug
 include ../legalQuestions/legalQuestions.pug
+include ../specialOffersBlock/specialOffersBlock.pug
 include ../reviews/reviews.pug
 
 mixin page-content()
@@ -8,7 +9,8 @@ mixin page-content()
 		+mainPageSlider()
 		.pageContentWrap
 			.mainColumn
-				.specialOffersBlock test
+				h1 спецпредложения
+				+specialOffersBlock()
 			.rightColumn
 				+newsBlock()
 				+legalQuestions()
