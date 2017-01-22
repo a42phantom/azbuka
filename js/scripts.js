@@ -12,6 +12,8 @@
 			dots:true
 		});
 
+		$('.accordion').accordion();
+		
 		console.log('end script!');
 	});
 })();

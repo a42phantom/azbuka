@@ -1,0 +1,38 @@
+include ../mainPageSlider/mainPageSlider.pug
+include ../newsBlock/newsBlock.pug
+include ../legalQuestions/legalQuestions.pug
+include ../reviews/reviews.pug
+include ../leftmenu/leftmenu.pug
+
+mixin page-content()
+	section.page-content
+		.pageContentWrap
+			.leftColumn
+				+leftMenu()
+			.mainColumn
+				.pageContact
+					h1 контакты
+					.contactInfo
+						table
+							tbody
+								tr
+									td Наш адрес
+									td 198216, Санкт-Петербург, бульвар Новаторово, д.11
+								tr
+									td Телефон
+									td +7 (812) 331-71-77
+								tr
+									td Факс
+									td +7 (812) 377-65-59
+								tr
+									td E-mail
+									td an@azbuka-ned.ru
+										br
+										| azbuka-ned@mail.ru
+								tr
+									td Генеральный
+										br
+										| директор
+									td Светлана Михайловна Грачева
+					.contactMap
+						img(src='images/location.png')

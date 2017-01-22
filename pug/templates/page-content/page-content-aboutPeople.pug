@@ -1,0 +1,83 @@
+include ../mainPageSlider/mainPageSlider.pug
+include ../newsBlock/newsBlock.pug
+include ../legalQuestions/legalQuestions.pug
+include ../reviews/reviews.pug
+include ../leftmenu/leftmenu.pug
+
+mixin page-content()
+	section.page-content
+		.pageContentWrap
+			.leftColumn
+				+leftMenu()
+			.mainColumn
+				.pageAboutPeople
+					h1 наша команда
+					ul
+						li
+							img(src="images/1.png")
+							p.name Грачева
+								br
+								| Светлана Михайловна
+							p.position Генеральный директор
+							p.text Стаж работы с 1992 
+								br 
+								| Аттестат № БН 02099
+						li
+							img(src="images/2.png")
+							p.name широкова 
+								br 
+								| валентина николаевна
+							p.position Менеджер группы
+							p.text Стаж работы с 2004
+								br 
+								|Аттестат № БН 02908
+						li
+							img(src="images/3.png")
+							p.name комкова 
+								br 
+								| ирина александровна
+							p.position Менеджер группы
+							p.text Стаж работы с 2002
+								br 
+								| Аттестат № БН 02415
+						li
+							img(src="images/4.png")
+							p.name грищенко 
+								br 
+								| юлия александровна
+							p.position Менеджер группы
+							p.text Стаж работы с 2003
+								br 
+								| Аттестат № БН 02900
+						li
+							img(src="images/5.png")
+							p.name сухович 
+								br 
+								| ирина викторовна
+							p.position Менеджер группы
+							p.text Стаж работы с 2003
+								br 
+								| Аттестат № БН 02905
+						li
+							img(src="images/6.png")
+							p.name мальцева 
+								br 
+								| лариса анатольевна
+							p.position Руководитель отдела аренды
+							p.text Стаж работы с 2001
+						li
+							img(src="images/7.png")
+							p.name гусев 
+								br 
+								| сергей алексеевич
+							p.position Менеджер отдела новостроек
+							p.text Стаж работы с 2012
+								br 
+								| Аттестат № АН 08193
+						li
+							img(src="images/8.png")
+							p.name дубинин 
+								br 
+								| александр иванович
+							p.position Менеджер отдела новостроек
+							p.text Стаж работы с 2013

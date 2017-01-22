@@ -1,0 +1,19 @@
+include ../mainPageSlider/mainPageSlider.pug
+include ../newsBlock/newsBlock.pug
+include ../legalQuestions/legalQuestions.pug
+include ../reviews/reviews.pug
+
+mixin page-content()
+	section.page-content
+		+mainPageSlider()
+		.pageContentWrap
+			.mainColumn
+				.specialOffersBlock test
+			.rightColumn
+				+newsBlock()
+				+legalQuestions()
+				a история компании
+				a наша команда
+				+reviews()
+				a контакты
+				a благотворительность

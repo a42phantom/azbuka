@@ -1,0 +1,22 @@
+include ../mainPageSlider/mainPageSlider.pug
+include ../newsBlock/newsBlock.pug
+include ../legalQuestions/legalQuestions.pug
+include ../reviews/reviews.pug
+include ../leftmenu/leftmenu.pug
+include ../pagination/pagination.pug
+
+mixin page-content()
+	section.page-content
+		.pageContentWrap
+			.leftColumn
+				+leftMenu()
+			.mainColumn
+				.pageAboutNews
+					h1 новости
+					.newsListBlock
+						- for (var x = 0; x < 10; x++)
+								.newsListItem
+									span.date 28 Января 2016
+									h4 Деятельность нашей компании застрахована в компании "КРК Страхование"!
+									p Гражданская ответственность Компании, связанная с осуществлением сделок с недвижимостью, застрахована на сумму 100 млн рублей!
+					+pagination()

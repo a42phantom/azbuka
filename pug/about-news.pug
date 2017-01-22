@@ -1,0 +1,16 @@
+include templates/head/head.pug
+include templates/header/header.pug
+include templates/page-content/page-content-aboutNews.pug
+include templates/footer/footer.pug
+include templates/scripts/scripts.pug
+
+doctype html
+
++head()
+
+body
+	div.wrapper
+		+header()
+		+page-content()
+		+footer()
+		+scripts()
