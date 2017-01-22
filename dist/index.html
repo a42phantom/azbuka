@@ -6,15 +6,19 @@
   <meta name="Description" lang="ru" content=""/>
   <link rel="author" href="phantomkemerovo@mail.ru"/>
   <title>Заголовок страницы</title>
-  <link rel="stylesheet" href="css/normolize.min.css"/>
-  <link rel="stylesheet" href="css/reset.min.css"/>
-  <link rel="stylesheet" href="css/media.min.css"/>
-  <link rel="stylesheet" href="css/styles.min.css"/>
+  <link rel="stylesheet" href="css/normolize.css"/>
+  <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="css/media.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <nav>
+      <nav class="navMenu">
         <ul>
           <li> <a> <span>жилая недвижимость</span></a></li>
           <li> <a class="active"> <span>новостройки</span></a></li>
@@ -27,10 +31,129 @@
           <li> <a> <span>избранное (9)</span></a></li>
         </ul>
       </nav>
+      <div class="contactInfoBlock">
+        <div class="logo"><img src="images/logo.png"/></div>
+        <div class="address">
+          <p class="addressText">198216, Санкт-Петербург, <img src="images/metro.png"/>Ленинский проспект бульвар Новаторов, д.11 Ежедневно с 10:00 до 21:00</p>
+        </div>
+        <div class="phone">
+          <p class="phoneText"><img src="images/phone-sign.png"/><span>(812)</span>331-71-77</p>
+          <p class="mail"><img src="images/mail-sign.png"/><span>an@azbuka-ned.ru</span></p>
+        </div>
+        <div class="callback">
+          <p><a class="callbackButton">оставить заявку</a></p>
+        </div>
+      </div>
+      <div class="headerDescription">
+        <p>ВСЯ НЕДВИЖИМОСТЬ ПЕТЕРБУРГА: ПОМОЖЕМ КУПИТЬ, ПРОДАТЬ КВАРТИРУ В НОВОСТРОЙКЕ, КУПИТЬ-ПРОДАТЬ ВТОРИЧНОЕ ЖИЛЬЕ, СДАТЬ-СНЯТЬ КВАРТИРУ, КОМНАТУ</p>
+      </div>
     </header>
-    <section class="page-content"></section>
+    <section class="page-content">
+      <div class="slidermainPage">
+        <div class="tabs">
+          <ul>
+            <li>Подбор квартиры в новостройке</li>
+            <li>распродажа</li>
+            <li>готовые подборки</li>
+          </ul>
+          <div>
+            <div>
+              <div class="owl-carousel sliderMainPageBody" id="sliderMainPageBody1">
+                <div class="item"><img src="images/slide1.png"/></div>
+                <div class="item"><img src="images/slide2.png"/></div>
+                <div class="item"><img src="images/slide3.png"/></div>
+              </div>
+            </div>
+            <div>
+              <div class="owl-carousel sliderMainPageBody" id="sliderMainPageBody2">
+                <div class="item"><img src="images/slide1.png"/></div>
+                <div class="item"><img src="images/slide2.png"/></div>
+                <div class="item"><img src="images/slide3.png"/></div>
+              </div>
+            </div>
+            <div>
+              <div class="owl-carousel sliderMainPageBody" id="sliderMainPageBody3">
+                <div class="item"><img src="images/slide1.png"/></div>
+                <div class="item"><img src="images/slide2.png"/></div>
+                <div class="item"><img src="images/slide3.png"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
-      <nav>
+      <ul class="footerbigMenu">
+        <li>
+          <p>Лидеры спроса</p>
+          <ul>
+            <li> <a>Готовые новостройки</a></li>
+            <li> <a>Квартиры-студии</a></li>
+            <li> <a>Новостройки у метро</a></li>
+            <li> <a>Новостройки с отделкой</a></li>
+            <li> <a>Квартиры до 2 млн. руб</a></li>
+            <li> <a>Квартиры-студии</a></li>
+            <li> <a>Новостройки у метро</a></li>
+            <li> <a>Новостройки с отделкой</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>Жилая недвижимость</p>
+          <ul>
+            <li> <a>Продажа комнат</a></li>
+            <li> <a>1к квартиры до 4 млн руб</a></li>
+            <li> <a>Квартиры в домах с кап. ремнотом</a></li>
+            <li> <a>Дома после 2000 года постройки</a></li>
+            <li> <a>Квартиры на 1 этаже</a></li>
+            <li> <a>1к квартиры до 4 млн руб</a></li>
+            <li> <a>Квартиры в домах с кап. ремнотом</a></li>
+            <li> <a>Дома после 2000 года постройки</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>Аренда</p>
+          <ul>
+            <li> <a>Квартиры и комнаты с центре</a></li>
+            <li> <a>Квартиры сдаются впервые</a></li>
+            <li> <a>Квартиры на длительный срок</a></li>
+            <li> <a>Квартиры сдаются впервые</a></li>
+            <li> <a>Квартиры на длительный срок</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>Загородная</p>
+          <ul>
+            <li> <a>Дома</a></li>
+            <li> <a>Таунхаузы</a></li>
+            <li> <a>Коттеджные поселки</a></li>
+            <li> <a>Таунхаузы</a></li>
+            <li> <a>Коттеджные поселки</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="contactInfoBlock">
+        <div class="logo"><img src="images/logo.png"/></div>
+        <div class="address">
+          <p class="addressText">198216, Санкт-Петербург, <img src="images/metro.png"/>Ленинский проспект бульвар Новаторов, д.11 Ежедневно с 10:00 до 21:00</p>
+        </div>
+        <div class="phone">
+          <p class="phoneText"><img src="images/phone-sign.png"/><span>(812)</span>331-71-77</p>
+          <p class="mail"><img src="images/mail-sign.png"/><span>an@azbuka-ned.ru</span></p>
+        </div>
+        <div class="callback">
+          <p><a class="callbackButton">оставить заявку</a></p>
+        </div>
+      </div>
+      <ul class="footerMiniMenu">
+        <li> <a><span>Новости</span></a></li>
+        <li> <a><span>правовые вопросы</span></a></li>
+        <li> <a><span>история компании</span></a></li>
+        <li> <a><span>наша команда</span></a></li>
+        <li> <a><span>отзывы</span></a></li>
+        <li> <a><span>контакты</span></a></li>
+        <li> <a><span>благотворительность</span></a></li>
+      </ul>
+      <nav class="navMenu">
         <ul>
           <li> <a> <span>жилая недвижимость</span></a></li>
           <li> <a class="active"> <span>новостройки</span></a></li>
@@ -45,6 +168,8 @@
       </nav>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/tabsLight.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
   </div>
 </body>

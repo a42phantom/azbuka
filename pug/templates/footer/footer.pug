@@ -1,4 +1,30 @@
 include ../navigation/navigation.pug
+include ../contactInfoBlock/contactInfoBlock.pug
+include ../footerBigMenu/footerbigMenu.pug
 mixin footer()
 	footer
+		+footerBigMenu()
+		+contactInfoBlock()
+		ul.footerMiniMenu
+			li 
+				a
+					span Новости
+			li 
+				a
+					span правовые вопросы
+			li 
+				a
+					span история компании
+			li 
+				a
+					span наша команда
+			li 
+				a
+					span отзывы
+			li 
+				a
+					span контакты
+			li 
+				a
+					span благотворительность
 		+nav()

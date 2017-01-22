@@ -12,12 +12,12 @@ var cssnano = require("gulp-cssnano");
 var autoprefixer = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
 
-// Lint Task
+/*// Lint Task
 gulp.task("lint", function() {
   return gulp.src("js/*.js")
   .pipe(jshint())
   .pipe(jshint.reporter("default"));
-});
+});*/
 
 // Compile Our Sass
 gulp.task("sass", function() {
@@ -26,8 +26,8 @@ gulp.task("sass", function() {
       browsers: ['last 2 versions']
   }))
   .pipe(sass())
-  .pipe(cssnano())
-  .pipe(rename({ suffix: '.min' }))
+  /*.pipe(cssnano())
+  .pipe(rename({ suffix: '.min' }))*/
   .pipe(gulp.dest("dist/css/"));
 });
 
@@ -50,10 +50,10 @@ gulp.task('pug', function() { // buildHTML
 
 // Watch Files For Changes
 gulp.task("watch", function() {
-  gulp.watch("js/**/*.js", ["lint", "scripts"]);
+  //gulp.watch("js/**/*.js", ["lint", "scripts"]);
   gulp.watch("scss/**/*.scss", ["sass"]);
   gulp.watch("pug/**/*.pug", ["pug"]);
 });
 
 // Default Task
-gulp.task("default", ["lint", "sass", "scripts", "pug", "watch"]);
+gulp.task("default", ["sass", "scripts", "pug", "watch"]);

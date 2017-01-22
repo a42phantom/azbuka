@@ -1,0 +1,275 @@
+body {
+  background: #fefefe;
+  overflow: hidden; }
+
+.tabs {
+  display: inline-block; }
+
+.tabs > div {
+  padding-top: 10px; }
+
+.tabs ul {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  position: relative; }
+
+/* .tabs ul:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+} */
+.tabs ul li {
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 10px 15px;
+  background: #e9eaeb;
+  color: #707070; }
+
+.tabs ul li.active, .tabs ul li.active:hover {
+  background: #46c765;
+  color: #fff; }
+
+.tabs ul li:hover {
+  background: #d6d6d7; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative; }
+  .wrapper:before {
+    content: '';
+    width: 45px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -45px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.1) 1px, transparent 45px); }
+  .wrapper:after {
+    content: '';
+    width: 45px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -45px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 45px); }
+  .wrapper header nav.navMenu, .wrapper footer nav.navMenu {
+    width: 100%; }
+    .wrapper header nav.navMenu ul, .wrapper footer nav.navMenu ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      background: #0168af;
+      border: 1px solid #90bddc; }
+      .wrapper header nav.navMenu ul li, .wrapper footer nav.navMenu ul li {
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto; }
+        .wrapper header nav.navMenu ul li a, .wrapper footer nav.navMenu ul li a {
+          display: block;
+          text-align: center;
+          padding: 20px 0;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #fff;
+          font-size: 14px;
+          /* font-family: DINBold; */
+          cursor: pointer; }
+          .wrapper header nav.navMenu ul li a.active, .wrapper footer nav.navMenu ul li a.active {
+            background: rgba(255, 255, 255, 0.5) !important; }
+        .wrapper header nav.navMenu ul li a:hover, .wrapper footer nav.navMenu ul li a:hover {
+          background: radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.5) 1%, transparent 70%, transparent 99%); }
+  .wrapper header .contactInfoBlock, .wrapper footer .contactInfoBlock {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0; }
+    .wrapper header .contactInfoBlock > .logo, .wrapper footer .contactInfoBlock > .logo {
+      float: left;
+      width: 20%;
+      padding-left: 30px; }
+    .wrapper header .contactInfoBlock > .address, .wrapper footer .contactInfoBlock > .address {
+      padding: 10px 65px 0;
+      float: left;
+      width: 30%; }
+      .wrapper header .contactInfoBlock > .address p.addressText, .wrapper footer .contactInfoBlock > .address p.addressText {
+        color: #5d6367;
+        font-size: 17px;
+        font-weight: normal; }
+    .wrapper header .contactInfoBlock > .phone, .wrapper footer .contactInfoBlock > .phone {
+      float: left;
+      width: 30%;
+      padding-left: 35px;
+      padding-top: 10px; }
+      .wrapper header .contactInfoBlock > .phone p.phoneText, .wrapper footer .contactInfoBlock > .phone p.phoneText {
+        color: #008bd0;
+        font-size: 38px; }
+        .wrapper header .contactInfoBlock > .phone p.phoneText img, .wrapper footer .contactInfoBlock > .phone p.phoneText img {
+          margin-right: 5px; }
+        .wrapper header .contactInfoBlock > .phone p.phoneText span, .wrapper footer .contactInfoBlock > .phone p.phoneText span {
+          color: #7fa8db;
+          font-size: 23px; }
+      .wrapper header .contactInfoBlock > .phone p.mail, .wrapper footer .contactInfoBlock > .phone p.mail {
+        color: #5d6367;
+        font-size: 25px; }
+        .wrapper header .contactInfoBlock > .phone p.mail img, .wrapper footer .contactInfoBlock > .phone p.mail img {
+          margin-right: 5px; }
+    .wrapper header .contactInfoBlock > .callback, .wrapper footer .contactInfoBlock > .callback {
+      float: left;
+      width: 20%; }
+      .wrapper header .contactInfoBlock > .callback p, .wrapper footer .contactInfoBlock > .callback p {
+        text-align: right;
+        padding-right: 25px;
+        padding-top: 12px; }
+        .wrapper header .contactInfoBlock > .callback p a.callbackButton, .wrapper footer .contactInfoBlock > .callback p a.callbackButton {
+          cursor: pointer;
+          color: #fff;
+          font-size: 18px;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 23px 15px;
+          background: linear-gradient(to right, #e29f27 0%, #ff9027 50%, #ff9027 1000%);
+          border: 3px solid #0084c9;
+          border-radius: 5px;
+          line-height: 18px; }
+          .wrapper header .contactInfoBlock > .callback p a.callbackButton:hover, .wrapper footer .contactInfoBlock > .callback p a.callbackButton:hover {
+            background: linear-gradient(to left, #e29f27 0%, #ff9027 50%, #ff9027 1000%); }
+  .wrapper header .headerDescription {
+    clear: both;
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    background-color: #98bfe3;
+    border: 1px solid #bfd7ee; }
+    .wrapper header .headerDescription p {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 13px;
+      text-align: justify;
+      line-height: 13px; }
+  .wrapper footer {
+    clear: both;
+    background-color: #f0f5f5; }
+    .wrapper footer ul.footerbigMenu {
+      box-shadow: inset 0px -4px 30px -15px rgba(0, 0, 0, 0.5);
+      background-color: #f0f5f5;
+      padding: 30px 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      width: 100%; }
+      .wrapper footer ul.footerbigMenu > li {
+        -ms-flex: auto;
+        flex: auto;
+        padding-left: 25px; }
+        .wrapper footer ul.footerbigMenu > li p {
+          color: #0084c9;
+          font-size: 18px;
+          margin-bottom: 10px; }
+        .wrapper footer ul.footerbigMenu > li ul li {
+          margin-bottom: 5px; }
+          .wrapper footer ul.footerbigMenu > li ul li a {
+            color: #5d6367;
+            text-decoration: underline;
+            font-size: 16px;
+            cursor: pointer; }
+            .wrapper footer ul.footerbigMenu > li ul li a:hover {
+              text-decoration: none; }
+    .wrapper footer ul.footerMiniMenu {
+      clear: both;
+      margin: 0px 0 20px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .wrapper footer ul.footerMiniMenu li {
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        text-align: center; }
+        .wrapper footer ul.footerMiniMenu li a {
+          font-size: 18px;
+          text-decoration: underline;
+          color: #575656;
+          cursor: pointer; }
+          .wrapper footer ul.footerMiniMenu li a:hover {
+            color: #0084c9; }
+  .wrapper .page-content {
+    padding: 25px 30px;
+    width: 100%; }
+  .wrapper .slidermainPage {
+    width: 100%; }
+    .wrapper .slidermainPage .tabs {
+      width: 100%; }
+      .wrapper .slidermainPage .tabs ul {
+        position: relative;
+        bottom: -3px; }
+        .wrapper .slidermainPage .tabs ul li {
+          font-size: 16px;
+          line-height: 16px;
+          color: #0084c9;
+          padding: 20px;
+          font-weight: bold;
+          text-transform: uppercase;
+          background-color: #f0f5f5;
+          border: 1px solid #b5b7c7;
+          border-bottom: 0;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          position: relative; }
+          .wrapper .slidermainPage .tabs ul li:nth-child(1) {
+            z-index: 10; }
+          .wrapper .slidermainPage .tabs ul li:nth-child(2) {
+            z-index: 9; }
+          .wrapper .slidermainPage .tabs ul li:nth-child(3) {
+            z-index: 8; }
+          .wrapper .slidermainPage .tabs ul li:nth-child(1):before {
+            display: none; }
+          .wrapper .slidermainPage .tabs ul li.active {
+            background-color: #0084c9;
+            color: #fff;
+            z-index: 11;
+            border-color: #0084c9; }
+          .wrapper .slidermainPage .tabs ul li.active:after, .wrapper .slidermainPage .tabs ul li.active:before {
+            z-index: -1;
+            border-color: #0084c9; }
+          .wrapper .slidermainPage .tabs ul li:after, .wrapper .slidermainPage .tabs ul li:before {
+            content: '';
+            width: 30px;
+            height: 56px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            background: inherit;
+            transform-origin: 100%;
+            z-index: -1;
+            border-top: 1px solid #b5b7c7; }
+          .wrapper .slidermainPage .tabs ul li:after {
+            transform: skewX(28deg);
+            border-top-right-radius: 5px;
+            border-right: 1px solid #b5b7c7;
+            right: -14px; }
+          .wrapper .slidermainPage .tabs ul li:before {
+            transform: skewX(-28deg);
+            border-top-left-radius: 5px;
+            border-left: 1px solid #b5b7c7;
+            left: -14px; }
+      .wrapper .slidermainPage .tabs > div {
+        overflow: hidden;
+        padding: 0;
+        border-radius: 5px;
+        border: 17px solid #0084c9;
+        z-index: 12;
+        position: relative; }
+        .wrapper .slidermainPage .tabs > div div img {
+          max-width: 100%; }
