@@ -62,41 +62,30 @@ p {
 
 .tabs {
   display: inline-block; }
-
-.tabs > div {
-  padding-top: 10px; }
-
-.tabs ul {
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  position: relative; }
-
-/* .tabs ul:after{
-	content:"";
-	display:block;
-	clear:both;
-	height:3px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-} */
-.tabs ul li {
-  margin: 0px;
-  padding: 0px;
-  cursor: pointer;
-  display: block;
-  float: left;
-  padding: 10px 15px;
-  background: #e9eaeb;
-  color: #707070; }
-
-.tabs ul li.active, .tabs ul li.active:hover {
-  background: #46c765;
-  color: #fff; }
-
-.tabs ul li:hover {
-  background: #d6d6d7; }
+  .tabs div {
+    padding-top: 10px; }
+  .tabs > ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative; }
+    .tabs > ul > li {
+      margin: 0px;
+      padding: 0px;
+      cursor: pointer;
+      display: block;
+      float: left;
+      padding: 10px 15px;
+      background: #e9eaeb;
+      color: #707070; }
+      .tabs > ul > li:hover {
+        background: #d6d6d7; }
+      .tabs > ul > li.active {
+        background: #46c765;
+        color: #fff; }
+      .tabs > ul > li.active:hover {
+        background: #46c765;
+        color: #fff; }
 
 .owl-carousel {
   position: relative; }
@@ -333,7 +322,7 @@ p {
         width: 100%; }
         .wrapper .page-content .slidermainPage .tabs ul {
           position: relative;
-          bottom: -3px; }
+          bottom: -4px; }
           .wrapper .page-content .slidermainPage .tabs ul li {
             font-size: 16px;
             line-height: 16px;
@@ -391,9 +380,9 @@ p {
           border: 17px solid #0084c9;
           z-index: 12;
           position: relative; }
-          .wrapper .page-content .slidermainPage .tabs > div div.tabsItem {
+          .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem {
             padding: 15px; }
-            .wrapper .page-content .slidermainPage .tabs > div div.tabsItem .slideDesc {
+            .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc {
               position: absolute;
               top: 45px;
               left: 45px;
@@ -403,28 +392,28 @@ p {
               width: 400px;
               height: 300px;
               border-radius: 5px; }
-              .wrapper .page-content .slidermainPage .tabs > div div.tabsItem .slideDesc p.offerName {
+              .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerName {
                 font-family: DINRegular;
                 color: #FFF;
                 font-size: 35px;
                 text-transform: uppercase; }
-              .wrapper .page-content .slidermainPage .tabs > div div.tabsItem .slideDesc p.offerHead {
+              .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerHead {
                 font-family: DINBold;
                 color: #FFF;
                 font-size: 25px; }
-              .wrapper .page-content .slidermainPage .tabs > div div.tabsItem .slideDesc p.offerText {
+              .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerText {
                 font-family: DINRegular;
                 color: #FFF;
                 font-size: 25px; }
-              .wrapper .page-content .slidermainPage .tabs > div div.tabsItem .slideDesc p.offerPrice {
+              .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerPrice {
                 font-family: DINRegular;
                 color: #FFF;
                 font-size: 23px; }
-                .wrapper .page-content .slidermainPage .tabs > div div.tabsItem .slideDesc p.offerPrice span {
+                .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerPrice span {
                   font-family: DINRegular;
                   color: #FFF;
                   font-size: 60px; }
-            .wrapper .page-content .slidermainPage .tabs > div div.tabsItem img {
+            .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem > img {
               max-width: 100%;
               width: 100%; }
     .wrapper .page-content .pageContentWrap {
@@ -434,7 +423,7 @@ p {
       flex-direction: row; }
       .wrapper .page-content .pageContentWrap .leftColumn {
         background-color: #f0f5f5;
-        padding: 30px;
+        padding: 30px 20px;
         width: 270px;
         box-shadow: inset 0px -4px 30px -15px rgba(0, 0, 0, 0.5); }
         .wrapper .page-content .pageContentWrap .leftColumn .leftMenu {
@@ -459,7 +448,7 @@ p {
                 color: #C20012;
                 cursor: pointer; }
       .wrapper .page-content .pageContentWrap .rightColumn {
-        padding: 30px;
+        padding: 30px 20px;
         width: 310px; }
         .wrapper .page-content .pageContentWrap .rightColumn a {
           color: #0084c9;
@@ -533,6 +522,199 @@ p {
         padding: 30px;
         -ms-flex: auto;
         flex: auto; }
+        .wrapper .page-content .pageContentWrap .mainColumn .tabs {
+          width: 100%; }
+          .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul {
+            position: relative;
+            bottom: -3px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li {
+              font-size: 16px;
+              line-height: 16px;
+              color: #0084c9;
+              padding: 20px;
+              font-weight: bold;
+              text-transform: uppercase;
+              background-color: #f0f5f5;
+              border: 1px solid #b5b7c7;
+              border-bottom: 0;
+              border-top-right-radius: 8px;
+              border-top-left-radius: 8px;
+              position: relative;
+              border-width: 3px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(1) {
+                z-index: 10; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(2) {
+                z-index: 9; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(3) {
+                z-index: 8; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(4) {
+                z-index: 7; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(5) {
+                z-index: 6; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(6) {
+                z-index: 5; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(1):before {
+                display: none; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.active {
+                background-color: #fff;
+                color: #0084c9;
+                z-index: 13;
+                border-color: #0084c9; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.active:after, .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.active:before {
+                z-index: -1;
+                border-color: #0084c9;
+                border-width: 3px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:after, .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:before {
+                content: '';
+                width: 30px;
+                height: 56px;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                background: inherit;
+                transform-origin: 100%;
+                z-index: -1;
+                border-top: 1px solid #b5b7c7;
+                border-width: 3px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:after {
+                transform: skewX(28deg);
+                border-top-right-radius: 5px;
+                border-right: 1px solid #b5b7c7;
+                right: -15px;
+                border-width: 3px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:before {
+                transform: skewX(-28deg);
+                border-top-left-radius: 5px;
+                border-left: 1px solid #b5b7c7;
+                left: -15px;
+                border-width: 3px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .tabs > div {
+            overflow: hidden;
+            padding: 0;
+            border-radius: 5px;
+            border: 3px solid #0084c9;
+            border-top-left-radius: 0;
+            z-index: 12;
+            position: relative; }
+            .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem {
+              padding: 15px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem .slideDesc {
+                position: absolute;
+                top: 45px;
+                left: 45px;
+                z-index: 1;
+                background-color: rgba(0, 132, 201, 0.8);
+                padding: 20px 30px;
+                width: 400px;
+                height: 300px;
+                border-radius: 5px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem .slideDesc p.offerName {
+                  font-family: DINRegular;
+                  color: #FFF;
+                  font-size: 35px;
+                  text-transform: uppercase; }
+                .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem .slideDesc p.offerHead {
+                  font-family: DINBold;
+                  color: #FFF;
+                  font-size: 25px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem .slideDesc p.offerText {
+                  font-family: DINRegular;
+                  color: #FFF;
+                  font-size: 25px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem .slideDesc p.offerPrice {
+                  font-family: DINRegular;
+                  color: #FFF;
+                  font-size: 23px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem .slideDesc p.offerPrice span {
+                    font-family: DINRegular;
+                    color: #FFF;
+                    font-size: 60px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > div div.tabsItem > img {
+                max-width: 100%;
+                width: 100%; }
+        .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          margin: -20px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem {
+            width: 235px;
+            -ms-flex: 1 auto;
+            flex: 1 auto;
+            margin: 15px 20px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .name {
+              width: 100%;
+              color: #0084C9;
+              font-size: 20px;
+              font-family: DINRegular;
+              text-decoration: underline;
+              margin-bottom: 25px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .imgBlock {
+              display: block;
+              width: 100%;
+              position: relative;
+              margin-bottom: 10px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .imgBlock p.price {
+                padding: 7px 10px;
+                background-color: #0084C9;
+                position: absolute;
+                top: -15px;
+                left: 0;
+                font-family: DINRegular;
+                font-size: 14px;
+                line-height: 14px;
+                color: #fff;
+                margin: 0; }
+                .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .imgBlock p.price span {
+                  font-family: DINBold;
+                  font-size: 20px;
+                  color: #fff; }
+              .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .imgBlock img {
+                max-width: 100%;
+                width: 100%; }
+            .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .params {
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              margin-bottom: 10px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .params li {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex: auto;
+                flex: auto;
+                font-size: 12px;
+                color: #3D3C3C;
+                font-family: DINRegular; }
+                .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .params li img {
+                  margin-right: 5px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem p.description {
+              color: #5D6367;
+              font-family: DINRegular;
+              font-size: 14px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem p.description span {
+                display: block;
+                width: 100%; }
+                .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem p.description span.address:before {
+                  content: "";
+                  width: 5px;
+                  height: 5px;
+                  display: block;
+                  float: left;
+                  border-radius: 50%;
+                  margin-top: 7px;
+                  margin-right: 5px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem p.description span.address.red:before {
+                  background-color: #ff0038; }
+                .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem p.description span.address.blue:before {
+                  background-color: #00f; }
+                .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem p.description span.address.green:before {
+                  background-color: #0f0; }
         .wrapper .page-content .pageContentWrap .mainColumn .paginationBlock ul {
           display: -ms-flexbox;
           display: flex; }

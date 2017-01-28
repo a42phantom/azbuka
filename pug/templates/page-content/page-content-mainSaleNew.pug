@@ -10,7 +10,21 @@ mixin page-content()
 		.pageContentWrap
 			.mainColumn
 				h1 спецпредложения
-				+specialOffersBlock()
+				.tabs#specialOffersTabs
+					ul
+						li Лучшая цена
+						li на севере
+						li на юге
+						li у метро
+					div
+						div.tabsItem
+							+specialOffersBlock(9)
+						div.tabsItem
+							+specialOffersBlock(9)
+						div.tabsItem
+							+specialOffersBlock(9)
+						div.tabsItem
+							+specialOffersBlock(9)
 			.rightColumn
 				+newsBlock()
 				+legalQuestions()

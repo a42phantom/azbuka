@@ -2,7 +2,8 @@
 	$(document).ready(function() {
 		console.log('run script...');
 
-		$('.tabs').lightTabs(); //инициализация вкладок на главной странице
+		$('#mainPageSliderTabs').lightTabs(); //инициализация вкладок на главной странице
+		$('#specialOffersTabs').lightTabs(); //инициализация вкладок в блоке спецпредложения
 
 		$('.sliderMainPageBody').owlCarousel({
 			loop:true,
