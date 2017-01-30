@@ -1,0 +1,68 @@
+include ../filterCalc/filterCalc.pug
+
+mixin page-content()
+	section.page-content
+		.slidermainPage
+			h1 подбор квартиры по переуступке
+			p Если Вы хотите приобрести квартиру на этапе строительства дома, но в свободной продаже у Застройщика подходящих для Вас вариантов уже не осталось, то мы советуем Вам обратить внимание на квартиры, продаваемые по переуступке.
+			.accordion
+				h4 
+					span подробнее о переуступках
+				.accordionItem
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			+filterCalc()
+		.pageContentWrap
+			.mainColumn
+				h3 На сайте представлены не все варианты переуступок. Если Вы не нашли подходящий вариант квартиры, оставьте заявку, и наши специалисты подберут для Вас наилучшие варианты!
+				a.defaultButton оставить заявку
+				.searchList
+					table
+						thead
+							tr
+								th 
+									a Жилой комплекс
+								th 
+									a Метро
+								th 
+									a Срок сдачи
+								th 
+									a Количество комнат
+								th 
+									a Общая площадь, м
+										sup 2
+								th 
+									a Планировка
+								th 
+									a Отделка
+								th 
+									a Агент
+								th 
+									a Цена, Руб
+								th 
+									a В избранное
+						tbody
+							- for (var x = 0; x < 15; x++)
+								tr
+									td.name
+										a ЖК "Лондон" д.8/1
+										br
+										| дур. Кудрово. Европейский пр.
+									td.metro
+										span.address.violet
+										| Комендантский проспект
+									td.deadline 
+										span СДАН
+										br
+										| IV кв. 2016
+									td.typeAppartament 1-комн
+									td.totalArea 26,8
+									td.plan
+										img(src="images/plan2.png")
+									td.decor да
+									td.agent Антон 
+										br
+										span +7 911 220-30-04
+									td.price 3 569 000
+									td.toFavorite
+										a
+				a.defaultButton показать еще

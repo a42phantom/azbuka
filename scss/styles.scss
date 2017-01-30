@@ -50,7 +50,7 @@ h3 {
 	}
 }
 h4 {
-	color: #1e1e1c;
+	color: #0084c9;
 	font-family: DINBold;
 	font-size:16px;
 	margin-top:0;
@@ -84,6 +84,36 @@ p {
 	font-family:DINRegular;
 	font-size:16px;
 	margin-bottom:15px;
+}
+span {
+	&.address {
+		display: block;
+		&:before {
+			content:"";
+			width: 5px;
+			height: 5px;
+			display: block;
+			float:left;
+			border-radius:50%;
+			margin-top: 7px;
+			margin-right: 5px;
+		}
+		&.red:before {
+			background-color:#ff0038;
+		}
+		&.orange:before {
+			background-color:#ff7600;
+		}
+		&.violet:before {
+			background-color: #713688;
+		}
+		&.blue:before {
+			background-color:#00f;
+		}
+		&.green:before {
+			background-color:#0f0;
+		}
+	}
 }
 a.readMore {
 	color: #0084C9;
@@ -549,6 +579,39 @@ a.defaultButton {
 					}
 				}
 			}
+			.accordion {
+				margin-bottom: 30px;
+				h4 {
+					outline:none;
+					span {
+						border-bottom:1px dashed #0084c9;				
+						cursor:pointer;				
+					}
+				}
+				.accardionItem {
+					margin-bottom: 30px;
+					p {
+						color: #575656;
+						font-family:DINBold;
+						font-size:14px;
+						margin-bottom:5px;
+					}
+					ul {
+						margin-bottom:20px;
+						color: #0084c9;
+						font-family:DINRegular;
+						font-size:14px;
+						padding-left: 15px;
+						li {
+							margin-bottom:5px;
+							list-style: circle;
+							span {
+								color: #575656;
+							}
+						}
+					}
+				}
+			}
 		}
 		.pageContentWrap {
 			display: flex;
@@ -878,29 +941,6 @@ a.defaultButton {
 							color: #5D6367;
 							font-family: DINRegular;
 							font-size: 14px;
-							span {
-								&.address:before {
-									content:"";
-									width: 5px;
-									height: 5px;
-									display: block;
-									float:left;
-									border-radius:50%;
-									margin-top: 7px;
-    							margin-right: 5px;
-								}
-								&.address.red:before {
-									background-color:#ff0038;
-								}
-								&.address.blue:before {
-									background-color:#00f;
-								}
-								&.address.green:before {
-									background-color:#0f0;
-								}
-								display: block;
-								width: 100%;
-							}
 						}
 					}
 				}
@@ -1196,6 +1236,86 @@ a.defaultButton {
 							}
 							&.map {
 								background-color: #0084C9;
+							}
+						}
+					}
+				}
+				.searchList {
+					margin-top:30px;
+					margin-bottom: 30px;
+					table {
+						width: 100%;
+						thead {
+							tr {
+								background-color: #F0F5F5;
+								th {
+									padding:20px 10px;
+									text-align: left;
+									vertical-align: bottom;
+									a {
+										font-family: DINRegular;
+										font-size: 12px;
+										color: #0168AF;
+										text-decoration: underline;
+									}
+								}
+							}
+						}
+						tbody {
+							tr {
+								color: #5D6367;
+								font-size: 14px;
+								font-family: DINRegular;
+								&:nth-child(even) {
+									background-color: #F0F5F5;
+								}
+								td {
+									text-align: left;
+									vertical-align: top;
+									padding:10px 0px 20px 10px;
+								}
+								td.typeAppartament {}
+								td.address {}
+								td.name {
+									a {
+										color: #0084C9;
+										font-size: 14px;
+										font-family: DINMedium;
+										text-decoration: underline;
+										cursor: pointer;
+										&:hover {
+											text-decoration:none;
+										}
+									}
+								}
+								td.metro {}
+								td.deadline {}
+								td.typeHouse {}
+								td.floor {}
+								td.totalArea {}
+								td.kitchenArea {}
+								td.agent {}
+								td.decor {}
+								td.plan {}
+								td.price {}
+								td.toFavorite {
+									a {
+										margin: auto;
+										width: 32px;
+										height: 32px;
+										display: block;
+										background: url('../images/starInActive.png');
+										background-position: center;
+										background-size:cover;
+										cursor:pointer;
+										&.active {
+											background: url('../images/starActive.png');
+										}
+										&:hover {
+											background: url('../images/starActive.png');	
+										}
+									}
+								}
 							}
 						}
 					}

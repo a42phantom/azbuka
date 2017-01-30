@@ -27,5 +27,46 @@ mixin page-content()
 					.searchButton
 						a.list Показать списком
 						a.map Показать на карте
+				.searchList
+					table
+						thead
+							tr
+								th 
+									a Тип квартиры
+								th 
+									a Адрес
+								th 
+									a Тип дома
+								th 
+									a Этаж
+								th 
+									a Общая площадь, м
+										sup 2
+								th 
+									a Площадь кухни, м
+										sup 2
+								th 
+									a Агент
+								th 
+									a Цена, Руб
+								th 
+									a В избранное
+						tbody
+							- for (var x = 0; x < 15; x++)
+								tr
+									td.typeAppartament 1-комн
+									td.address 
+										span.address.violet
+										| Комендантский проспект
+										br
+										| пр. Народного Ополчения, 167 к. 21
+									td.typeHouse Панельный
+									td.floor 1/10
+									td.totalArea 26,8
+									td.kitchenArea 6.8
+									td.agent Антон +7 911 220-30-04
+									td.price 3 569 000
+									td.toFavorite
+										a
 				+pagination()
 				+listBlockButton()
