@@ -1,4 +1,4 @@
-include ../mainPageSlider/mainPageSlider.pug
+include ../filterCalc/filterCalc.pug
 include ../newsBlock/newsBlock.pug
 include ../legalQuestions/legalQuestions.pug
 include ../specialOffersBlock/specialOffersBlock.pug
@@ -11,18 +11,14 @@ mixin page-content()
 			.tabs#mainPageTabs
 				ul
 					li 
-						a(href="#tabs1") Подбор квартиры в новостройке
+						a(href="#tabs1") Подбор загородной недвижимости
 					li 
-						a(href="#tabs2") распродажа
-					li 
-						a(href="#tabs3") готовые подборки
+						a(href="#tabs2") готовые подборки
 				div
 					div.tabsItem#tabs1
-						+mainPageSlider()
+						+filterCalc()
 					div.tabsItem#tabs2
 						| 2
-					div.tabsItem#tabs3
-						+mainPageSlider()
 		.pageContentWrap
 			.mainColumn
 				h1 спецпредложения
@@ -31,19 +27,15 @@ mixin page-content()
 						li 
 							a(href="#tabsSpec1") Лучшая цена
 						li 
-							a(href="#tabsSpec2") на севере
+							a(href="#tabsSpec2") Участки
 						li 
-							a(href="#tabsSpec3") на юге
-						li 
-							a(href="#tabsSpec4") у метро
+							a(href="#tabsSpec3") дома
 					div
 						div.tabsItem#tabsSpec1
 							+specialOffersBlock(9)
 						div.tabsItem#tabsSpec2
 							| 2
 						div.tabsItem#tabsSpec3
-							+specialOffersBlock(9)
-						div.tabsItem#tabsSpec4
 							+specialOffersBlock(9)
 				+mainTextBlock()
 			.rightColumn

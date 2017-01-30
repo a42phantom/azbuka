@@ -1,0 +1,31 @@
+include ../filterCalc/filterCalc.pug
+include ../pagination/pagination.pug
+include ../listBlockButton/listBlockButton.pug
+
+mixin page-content()
+	section.page-content
+		.slidermainPage
+			.tabs#mainPageTabs
+				ul
+					li 
+						a(href="#tabs1") Подбор квартир на вторичном рынке
+					li 
+						a(href="#tabs2") готовые подборки
+				div
+					div.tabsItem#tabs1
+						+filterCalc()
+					div.tabsItem#tabs2
+						| 2
+		.pageContentWrap
+			.mainColumn
+				.searchResultBlock
+					.searchHead
+						p результаты поиска: 
+							span жилая недвижимость
+					.searchResult
+						p Найден 141 вариант
+					.searchButton
+						a.list Показать списком
+						a.map Показать на карте
+				+pagination()
+				+listBlockButton()

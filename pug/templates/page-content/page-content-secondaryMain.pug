@@ -1,4 +1,4 @@
-include ../mainPageSlider/mainPageSlider.pug
+include ../filterCalc/filterCalc.pug
 include ../newsBlock/newsBlock.pug
 include ../legalQuestions/legalQuestions.pug
 include ../specialOffersBlock/specialOffersBlock.pug
@@ -11,18 +11,14 @@ mixin page-content()
 			.tabs#mainPageTabs
 				ul
 					li 
-						a(href="#tabs1") Подбор квартиры в новостройке
+						a(href="#tabs1") Подбор квартир на вторичном рынке
 					li 
-						a(href="#tabs2") распродажа
-					li 
-						a(href="#tabs3") готовые подборки
+						a(href="#tabs2") готовые подборки
 				div
 					div.tabsItem#tabs1
-						+mainPageSlider()
+						+filterCalc()
 					div.tabsItem#tabs2
 						| 2
-					div.tabsItem#tabs3
-						+mainPageSlider()
 		.pageContentWrap
 			.mainColumn
 				h1 спецпредложения

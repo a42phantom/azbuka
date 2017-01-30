@@ -1,4 +1,4 @@
-include ../mainPageSlider/mainPageSlider.pug
+include ../filterCalc/filterCalc.pug
 include ../newsBlock/newsBlock.pug
 include ../legalQuestions/legalQuestions.pug
 include ../specialOffersBlock/specialOffersBlock.pug
@@ -18,11 +18,11 @@ mixin page-content()
 						a(href="#tabs3") готовые подборки
 				div
 					div.tabsItem#tabs1
-						+mainPageSlider()
+						+filterCalc()
 					div.tabsItem#tabs2
 						| 2
 					div.tabsItem#tabs3
-						+mainPageSlider()
+						+filterCalc()
 		.pageContentWrap
 			.mainColumn
 				h1 спецпредложения

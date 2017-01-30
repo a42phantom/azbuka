@@ -7,8 +7,9 @@ h1 {
   font-family: DINLight;
   font-size: 50px;
   margin-top: 0;
-  margin-bottom: 15px;
-  text-transform: uppercase; }
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 100; }
   h1 a {
     text-decoration: underline;
     cursor: pointer; }
@@ -20,8 +21,9 @@ h2 {
   font-family: DINLight;
   font-size: 50px;
   margin-top: 0;
-  margin-bottom: 15px;
-  text-transform: uppercase; }
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 100; }
   h2 a {
     text-decoration: underline;
     cursor: pointer; }
@@ -29,8 +31,8 @@ h2 {
       text-decoration: none; }
 
 h3 {
-  color: #0084c9;
-  font-family: DINRegular;
+  color: #1e1e1c;
+  font-family: DINBold;
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 15px;
@@ -42,16 +44,29 @@ h3 {
       text-decoration: none; }
 
 h4 {
+  color: #1e1e1c;
+  font-family: DINBold;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+  h4 a {
+    text-decoration: underline;
+    cursor: pointer; }
+    h4 a:hover {
+      text-decoration: none; }
+
+h5 {
   color: #0084c9;
   font-family: DINRegular;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 15px;
   text-transform: uppercase; }
-  h4 a {
+  h5 a {
     text-decoration: underline;
     cursor: pointer; }
-    h4 a:hover {
+    h5 a:hover {
       text-decoration: none; }
 
 p {
@@ -60,10 +75,47 @@ p {
   font-size: 16px;
   margin-bottom: 15px; }
 
+a.readMore {
+  color: #0084C9;
+  font-size: 16px;
+  font-family: DINRegular;
+  text-decoration: underline;
+  cursor: pointer; }
+  a.readMore:hover {
+    text-decoration: none; }
+
+a.callbackButton {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 23px 15px;
+  background: linear-gradient(to right, #e29f27 0%, #ff9027 50%, #ff9027 1000%);
+  border: 3px solid #0084c9;
+  border-radius: 5px;
+  line-height: 18px; }
+  a.callbackButton:hover {
+    background: linear-gradient(to left, #e29f27 0%, #ff9027 50%, #ff9027 1000%); }
+
+a.defaultButton {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 23px 15px;
+  background-color: #0084c9;
+  border: 3px solid #0168af;
+  border-radius: 5px;
+  line-height: 18px; }
+  a.defaultButton:hover {
+    background-color: #33a9e7; }
+
 .tabs {
   display: inline-block; }
   .tabs div {
-    padding-top: 10px; }
+    /* padding-top:10px; */ }
   .tabs > ul {
     margin: 0px;
     padding: 0px;
@@ -105,12 +157,13 @@ p {
       left: -50px;
       font-size: 50px;
       background-color: #7fa8db;
-      width: 70px;
-      height: 70px;
+      border: 3px solid #fff;
+      width: 67px;
+      height: 67px;
       border-radius: 50%;
       text-align: right;
-      padding-right: 14px;
-      padding-top: 8px;
+      padding-right: 9px;
+      padding-top: 2px;
       color: #fff; }
     .owl-carousel .owl-nav .owl-next {
       z-index: 2;
@@ -119,12 +172,13 @@ p {
       right: -50px;
       font-size: 50px;
       background-color: #7fa8db;
-      width: 70px;
-      height: 70px;
+      border: 3px solid #fff;
+      width: 67px;
+      height: 67px;
       border-radius: 50%;
       text-align: left;
-      padding-left: 14px;
-      padding-top: 8px;
+      padding-left: 9px;
+      padding-top: 2px;
       color: #fff; }
   .owl-carousel .owl-dots {
     position: absolute;
@@ -236,19 +290,6 @@ p {
         text-align: right;
         padding-right: 25px;
         padding-top: 12px; }
-        .wrapper header .contactInfoBlock > .callback p a.callbackButton, .wrapper footer .contactInfoBlock > .callback p a.callbackButton {
-          cursor: pointer;
-          color: #fff;
-          font-size: 18px;
-          display: inline-block;
-          text-transform: uppercase;
-          padding: 23px 15px;
-          background: linear-gradient(to right, #e29f27 0%, #ff9027 50%, #ff9027 1000%);
-          border: 3px solid #0084c9;
-          border-radius: 5px;
-          line-height: 18px; }
-          .wrapper header .contactInfoBlock > .callback p a.callbackButton:hover, .wrapper footer .contactInfoBlock > .callback p a.callbackButton:hover {
-            background: linear-gradient(to left, #e29f27 0%, #ff9027 50%, #ff9027 1000%); }
   .wrapper header .headerDescription {
     clear: both;
     width: 100%;
@@ -315,8 +356,7 @@ p {
     padding: 0;
     width: 100%; }
     .wrapper .page-content .slidermainPage {
-      padding: 30px;
-      padding-bottom: 30px;
+      padding: 30px 30px 0 30px;
       width: 100%; }
       .wrapper .page-content .slidermainPage .tabs {
         width: 100%; }
@@ -327,7 +367,7 @@ p {
             font-size: 16px;
             line-height: 16px;
             color: #0084c9;
-            padding: 20px;
+            padding: 0px;
             font-weight: bold;
             text-transform: uppercase;
             background-color: #f0f5f5;
@@ -336,6 +376,12 @@ p {
             border-top-right-radius: 8px;
             border-top-left-radius: 8px;
             position: relative; }
+            .wrapper .page-content .slidermainPage .tabs ul li a {
+              padding: 20px;
+              display: block;
+              outline: none;
+              color: #0084c9;
+              text-decoration: none; }
             .wrapper .page-content .slidermainPage .tabs ul li:nth-child(1) {
               z-index: 10; }
             .wrapper .page-content .slidermainPage .tabs ul li:nth-child(2) {
@@ -344,12 +390,15 @@ p {
               z-index: 8; }
             .wrapper .page-content .slidermainPage .tabs ul li:nth-child(1):before {
               display: none; }
-            .wrapper .page-content .slidermainPage .tabs ul li.active {
+            .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active {
               background-color: #0084c9;
               color: #fff;
               z-index: 11;
               border-color: #0084c9; }
-            .wrapper .page-content .slidermainPage .tabs ul li.active:after, .wrapper .page-content .slidermainPage .tabs ul li.active:before {
+              .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active a {
+                color: #fff;
+                text-decoration: none; }
+            .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active:after, .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active:before {
               z-index: -1;
               border-color: #0084c9; }
             .wrapper .page-content .slidermainPage .tabs ul li:after, .wrapper .page-content .slidermainPage .tabs ul li:before {
@@ -396,19 +445,23 @@ p {
                 font-family: DINRegular;
                 color: #FFF;
                 font-size: 35px;
-                text-transform: uppercase; }
+                text-transform: uppercase;
+                margin-bottom: 10px; }
               .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerHead {
                 font-family: DINBold;
                 color: #FFF;
-                font-size: 25px; }
+                font-size: 25px;
+                margin-bottom: 10px; }
               .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerText {
                 font-family: DINRegular;
                 color: #FFF;
-                font-size: 25px; }
+                font-size: 25px;
+                margin-bottom: 10px; }
               .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerPrice {
                 font-family: DINRegular;
                 color: #FFF;
-                font-size: 23px; }
+                font-size: 23px;
+                margin-bottom: 10px; }
                 .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc p.offerPrice span {
                   font-family: DINRegular;
                   color: #FFF;
@@ -450,7 +503,11 @@ p {
       .wrapper .page-content .pageContentWrap .rightColumn {
         padding: 30px 20px;
         width: 310px; }
-        .wrapper .page-content .pageContentWrap .rightColumn a {
+        .wrapper .page-content .pageContentWrap .rightColumn .accordion {
+          margin-bottom: 30px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .accordion:nth-last-child(1) {
+            margin-bottom: 0px; }
+        .wrapper .page-content .pageContentWrap .rightColumn h4 {
           color: #0084c9;
           font-family: DINRegular;
           font-size: 20px;
@@ -458,8 +515,9 @@ p {
           margin-bottom: 15px;
           text-transform: uppercase;
           text-decoration: underline;
-          display: block; }
-          .wrapper .page-content .pageContentWrap .rightColumn a:hover {
+          display: block;
+          outline: none; }
+          .wrapper .page-content .pageContentWrap .rightColumn h4:hover {
             text-decoration: none; }
         .wrapper .page-content .pageContentWrap .rightColumn .newsBlock {
           margin-bottom: 25px; }
@@ -531,7 +589,7 @@ p {
               font-size: 16px;
               line-height: 16px;
               color: #0084c9;
-              padding: 20px;
+              padding: 0px;
               font-weight: bold;
               text-transform: uppercase;
               background-color: #f0f5f5;
@@ -541,6 +599,12 @@ p {
               border-top-left-radius: 8px;
               position: relative;
               border-width: 3px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li a {
+                padding: 20px;
+                color: #0084c9;
+                display: block;
+                text-decoration: none;
+                outline: none; }
               .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(1) {
                 z-index: 10; }
               .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(2) {
@@ -555,12 +619,12 @@ p {
                 z-index: 5; }
               .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li:nth-child(1):before {
                 display: none; }
-              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.active {
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.ui-tabs-active {
                 background-color: #fff;
                 color: #0084c9;
                 z-index: 13;
                 border-color: #0084c9; }
-              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.active:after, .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.active:before {
+              .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.ui-tabs-active:after, .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul > li.ui-tabs-active:before {
                 z-index: -1;
                 border-color: #0084c9;
                 border-width: 3px; }
@@ -846,3 +910,103 @@ p {
           max-width: 100%; }
         .wrapper .page-content .pageContentWrap .mainColumn .pageAboutCompany h4 {
           text-transform: none; }
+        .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock {
+          margin-top: 30px;
+          margin-bottom: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem {
+              width: 50%;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              margin-bottom: 25px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem:nth-child(odd) .itemText {
+                padding-right: 50px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemImg {
+                margin-right: 15px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemText p {
+                font-size: 16px;
+                color: #5D6367;
+                font-family: DINRegular; }
+                .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemText p span {
+                  font-family: DINmedium;
+                  color: #000; }
+          .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .mainTextBlockContent p {
+            color: #5D6367;
+            font-size: 16px;
+            font-family: DINRegular; }
+          .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .mainTextBlockContent blockquote {
+            font-size: 20px;
+            color: #0084C9;
+            font-family: DINRegular;
+            margin: 20px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .filterBlock {
+          margin-bottom: 30px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .listBlockButton {
+          margin-top: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .listBlockButton p {
+            color: #0084C9;
+            font-size: 20px;
+            font-family: DINBold;
+            text-transform: uppercase; }
+          .wrapper .page-content .pageContentWrap .mainColumn .listBlockButton .listButton {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: row;
+            flex-direction: row; }
+            .wrapper .page-content .pageContentWrap .mainColumn .listBlockButton .listButton a {
+              margin-right: 25px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchHead {
+            margin-right: 20px;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -ms-flexbox;
+            display: flex; }
+            .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchHead p {
+              color: #0084C9;
+              font-size: 20px;
+              font-family: DINBold;
+              text-transform: uppercase;
+              margin-bottom: 0; }
+          .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchResult {
+            -ms-flex-align: center;
+            align-items: center;
+            display: -ms-flexbox;
+            display: flex;
+            margin-right: 20px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchResult p {
+              color: #5D6367;
+              font-size: 16px;
+              font-family: DINRegular;
+              margin-bottom: 0; }
+          .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchButton {
+            -ms-flex-align: center;
+            align-items: center;
+            display: -ms-flexbox;
+            display: flex; }
+            .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchButton a {
+              color: #FFF;
+              font-size: 14px;
+              font-family: DINRegular;
+              padding: 10px;
+              cursor: pointer;
+              display: block;
+              float: left; }
+              .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchButton a:hover {
+                opacity: 0.7; }
+              .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchButton a.list {
+                background-color: #0168AF; }
+              .wrapper .page-content .pageContentWrap .mainColumn .searchResultBlock .searchButton a.map {
+                background-color: #0084C9; }

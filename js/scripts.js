@@ -2,8 +2,8 @@
 	$(document).ready(function() {
 		console.log('run script...');
 
-		$('#mainPageSliderTabs').lightTabs(); //инициализация вкладок на главной странице
-		$('#specialOffersTabs').lightTabs(); //инициализация вкладок в блоке спецпредложения
+		$('#mainPageTabs').tabs(); //инициализация вкладок на главной странице
+		$('#specialOffersTabs').tabs(); //инициализация вкладок в блоке спецпредложения
 
 		$('.sliderMainPageBody').owlCarousel({
 			loop:true,
@@ -13,7 +13,9 @@
 			dots:true
 		});
 
-		$('.accordion').accordion();
+		$('.accordion').accordion({
+			collapsible:true
+		});
 		
 		console.log('end script!');
 	});

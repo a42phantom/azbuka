@@ -1,0 +1,12 @@
+include ../filterCalc/filterCalc.pug
+include ../specialOffersBlock/specialOffersBlock.pug
+include ../formCalculation/formCalculation.pug
+
+mixin page-content()
+	section.page-content
+		.pageContentWrap
+			.mainColumn
+				+filterCalc()
+				h1 расчет по ипотеке
+				+specialOffersBlock(36)
+				+formCalculation()
