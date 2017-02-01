@@ -1,0 +1,52 @@
+mixin favoritesTable(count)
+	.favoritesTable
+			table
+				thead
+					tr
+						th
+						th Тип квартиры
+						th Жилой комплекс
+						th Метро
+						th Срок сдачи
+						th Общая площадь, м
+							sup 2
+						th Площадь кухни. м
+							sup 2
+						th отделка
+						th Планировка
+						th Стоимость. руб
+						th
+				tfoot
+					tr
+						td(colspan="6")
+							a.defaultButton сравнить отмеченные
+							a.defaultButton забронировать
+						td.rightAlign(colspan="5")
+							a.sendmailButton Отправить на почту
+							a.sendmailButton Распечатать
+				tbody
+				- for (var x = 0; x < count; x++) 
+					tr
+						td 
+							input(type="checkbox")
+						td 1-комн
+						td 
+							p.name ЖК «Лондон» д. 8/1
+							p.text дер. Кудрово, Европейский пр.
+						td
+							span.address.violet
+							| коммендантский проспект
+						td 
+							span.final СДАН
+							br
+							| IV кв. 2016
+						td 30,1
+						td 6,5
+						td Полная отделка от затсройщика: обои, ламинат, кафель
+						td
+							img(src="images/plan2.png")
+						td
+							span.price 1 789 000
+						td
+							a.remove
+								img(src="images/trash.png")

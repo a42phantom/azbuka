@@ -1,0 +1,60 @@
+mixin compareBlock()
+	.compareBlock
+		.wrapLeft
+			.leftHead
+				.headName
+					p Тип квартиры
+				.headDesc1
+					.htName
+						p.blue Жилой комплекс
+					p Метро
+					p.blue Ипотека
+					p Рассрочка
+					p.blue Срок сдачи
+				.headDesc2
+					p Общая площадь
+						sup 2
+					p Площадь кухни
+						sup 2
+					p Отделка
+						sup 2
+				.headDesc3
+					p Цена за м
+						sup 2
+						| . руб
+					p Стоимость. руб.
+		.wrapRight
+			-for (i = 1;i < 10;i++)
+				.compareItem
+					.itemNameWrap
+						.itemName 
+							p 1-комн. 30,1 м
+								sup 2
+						.itemImg
+							img(src="images/comparePic1.png")
+						.itemPlan
+							img(src="images/comparePlan1.png")
+					.headDesc1
+						.htName
+							p.blue ЖК «Лондон» д. 8/1 
+							p дер. Кудрово, Европейский пр.
+						p 
+							span.address.violet
+							| Комендантский проспект
+						p.blue да
+						p да
+						p.blue СДАН, IV кв. 2016
+					.headDesc2
+						p 30,1
+						p 6,5
+						p НЕТ
+					.headDesc3
+						p 50 000
+						p.price 1 789 000
+					.blockButton
+						p
+							a.defaultButton забронировать
+						p
+							a.removeButton Убрать из сравнения
+	.sendmailBlock
+		a.sendmailButton отправить на почту

@@ -4,6 +4,7 @@
 
 		$('#mainPageTabs').tabs(); //инициализация вкладок на главной странице
 		$('#specialOffersTabs').tabs(); //инициализация вкладок в блоке спецпредложения
+		$('#favorites').tabs(); //инициализация вкладок в блоке спецпредложения
 
 		$('.sliderMainPageBody').owlCarousel({
 			loop:true,
@@ -16,7 +17,9 @@
 		$('.accordion').accordion({
 			collapsible:true
 		});
-		
+
+		$('input').styler({});
+
 		console.log('end script!');
 	});
 })();

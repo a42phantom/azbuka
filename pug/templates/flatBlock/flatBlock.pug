@@ -1,0 +1,85 @@
+mixin flatBlock()
+	.flatBlock
+		.flatContent
+			.flatImage
+				img(src="images/flatPlan1.png")
+			.flatTable
+				table
+					thead
+						tr
+							th 2-комн. квартира
+							th 58,7 м2
+							th
+								a.starLink
+					tbody
+						tr
+							td Общая площадь
+							td(colspan="2") 58.7 м
+								sup 2
+						tr
+							td Площадь кухни
+							td(colspan="2") 8.16 м
+								sup 2
+						tr
+							td(colspan="3")
+								hr
+						tr
+							td Площадь комнат
+							td(colspan="2") 29.88 м
+								sup 2
+						tr
+							td Район
+							td(colspan="2") Всеволожский район
+						tr
+							td Метро
+							td(colspan="2") Девяткино
+						tr
+							td Адрес
+							td(colspan="2") п.Мурино
+						tr
+							td(colspan="3")
+								hr
+						tr
+							td Срок сдачи
+							td(colspan="2") IV квартал 2016
+						tr
+							td Корпус
+							td(colspan="2") Корпус 1, 2
+						tr
+							td(colspan="3")
+								hr
+						tr
+							td(colspan="3")
+								ul.params
+									li
+										img(src="images/otdelka-ico.png")
+										| Отделка
+									li
+										img(src="images/214-ico.png")
+										| 214 ФЗ
+									li
+										img(src="images/ipoteka-ico.png")
+										| Ипотека
+						tr
+							td стоимость
+							td(colspan="2")
+								span.price 1 895 000 руб.
+						tr
+							td(colspan="3")
+								a.defaultButton сделать заявку
+						tr
+							td(colspan="3")
+								a.tableButton Отправить на почту
+								a.tableButton Распечатать
+			.flatAccess
+				p Доступна 
+					br
+					| на этажах
+				ul
+					- for (i = 1; i < 25;i++)
+						if (i == 5)
+							li.active
+								a= i
+						else 
+							li
+								a= i

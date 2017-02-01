@@ -1,0 +1,34 @@
+include ../favoritesTable/favoritesTable.pug
+
+mixin page-content()
+	section.page-content
+		.pageContentWrap
+			.mainColumn
+				h1 избранное
+				p Воспользуйтесь удобным модулем сравнения выбранных вариантов: просто выделите галочками те варианты, которые Вы хотите сопоставить и нажмите на кнопку «Сравнить».
+				p Если Вы решили остановиться на каком-либо из избранных вариантов, выделите его галочкой, нажмите на кнопку «Забронировать» и заполните специальную форму.
+				.tabs#favorites
+					ul
+						li 
+							a(href="#tabsSpec1") новостройки
+						li 
+							a(href="#tabsSpec2") жилая недвижимость
+						li 
+							a(href="#tabsSpec3") загородная недвижимость
+						li 
+							a(href="#tabsSpec4") переуступки
+					div
+						div.tabsItem#tabsSpec1
+							+favoritesTable(3)
+						div.tabsItem#tabsSpec2
+							+favoritesTable(3)
+						div.tabsItem#tabsSpec3
+							+favoritesTable(3)
+						div.tabsItem#tabsSpec4
+							+favoritesTable(3)
+				.favoriteTextBlock
+					h4 не нашли подходящий вариант?
+					p Оставьте заявку, либо позвоните нам по телефону 8 (812) 331-71-77 и наши специалисты 
+						span БЕСПЛАТНО ЗА 24 часа 
+						| подберут для Вас подходящие варианты!
+					a.defaultButton оставить заявку

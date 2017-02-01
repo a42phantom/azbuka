@@ -1,0 +1,8 @@
+mixin historyBack(name,head)
+	.historyBack
+		p.linkHistory
+			a(href="javascript:window.history.back()")
+				img(src="images/back-arrow.png")
+		p.name= name
+		- if (head)
+			p.head= head

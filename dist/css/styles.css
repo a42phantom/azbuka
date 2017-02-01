@@ -134,9 +134,31 @@ a.defaultButton {
   a.defaultButton:hover {
     background-color: #33a9e7; }
 
+.rightAlign {
+  text-align: right; }
+
+.leftAlign {
+  text-align: left; }
+
+.jq-checkbox {
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #929292;
+  box-shadow: none;
+  width: 16px;
+  height: 16px;
+  box-sizing: content-box; }
+  .jq-checkbox.checked .jq-checkbox__div {
+    background: url("../images/checked.png");
+    border-radius: 0;
+    box-shadow: none;
+    width: 16px;
+    height: 16px;
+    margin: 0; }
+
 .tabs {
   display: inline-block; }
-  .tabs div {
+  .tabs > div {
     /* padding-top:10px; */ }
   .tabs > ul {
     margin: 0px;
@@ -624,6 +646,7 @@ a.defaultButton {
             font-family: DINBold;
             font-size: 14px; }
       .wrapper .page-content .pageContentWrap .mainColumn {
+        width: 100%;
         padding: 30px;
         -ms-flex: auto;
         flex: auto; }
@@ -1086,3 +1109,356 @@ a.defaultButton {
                   background: url("../images/starActive.png"); }
                 .wrapper .page-content .pageContentWrap .mainColumn .searchList table tbody tr td.toFavorite a:hover {
                   background: url("../images/starActive.png"); }
+        .wrapper .page-content .pageContentWrap .mainColumn .contactMap img {
+          width: 100%;
+          max-width: 100%; }
+        .wrapper .page-content .pageContentWrap .mainColumn .historyBack {
+          margin-bottom: 30px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          .wrapper .page-content .pageContentWrap .mainColumn .historyBack:nth-last-child(1) {
+            margin-bottom: 0;
+            margin-top: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .historyBack p {
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 0; }
+            .wrapper .page-content .pageContentWrap .mainColumn .historyBack p.linkHistory {
+              margin-right: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .historyBack p.name {
+              color: #0084C9;
+              font-size: 18px;
+              font-family: DINBold;
+              text-decoration: underline;
+              line-height: 18px;
+              display: -ms-flexbox;
+              display: flex;
+              margin-right: 50px;
+              text-transform: uppercase; }
+            .wrapper .page-content .pageContentWrap .mainColumn .historyBack p.head {
+              color: #FF9027;
+              font-size: 18px;
+              font-family: DINBold;
+              line-height: 18px;
+              display: -ms-flexbox;
+              display: flex;
+              text-transform: uppercase; }
+        .wrapper .page-content .pageContentWrap .mainColumn .flatBlock {
+          margin-bottom: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent {
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            border-top: 1px solid #c4c4c5;
+            max-width: 100%;
+            padding-top: 30px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatImage img {
+              max-width: 100%; }
+            .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable {
+              margin-left: 50px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table thead tr th {
+                color: #0084C9;
+                font-size: 18px;
+                font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table thead tr th a.starLink {
+                  margin: auto;
+                  width: 32px;
+                  height: 32px;
+                  display: block;
+                  background: url("../images/starInActive.png");
+                  background-position: center;
+                  background-size: cover;
+                  cursor: pointer; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table thead tr th a.starLink.active {
+                    background: url("../images/starActive.png"); }
+                  .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table thead tr th a.starLink:hover {
+                    background: url("../images/starActive.png"); }
+              .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td {
+                color: #3D3C3C;
+                font-size: 16px;
+                font-family: DINRegular;
+                padding: 5px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td span.price {
+                  color: #0084C9;
+                  font-size: 22px;
+                  font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td a.tableButton {
+                  margin-right: 10px;
+                  color: #5D6367;
+                  font-size: 14px;
+                  font-family: DINRegular;
+                  display: block;
+                  background-color: #BADEF1;
+                  padding: 10px 15px;
+                  float: left; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td a.tableButton:hover {
+                    text-decoration: underline; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td a.defaultButton {
+                  font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td hr {
+                  border: 0;
+                  border-bottom: 1px solid #C4C4C5;
+                  margin: 10px 0; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td .params {
+                  display: -ms-flexbox;
+                  display: flex;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  margin-bottom: 10px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td .params li {
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -ms-flex: auto;
+                    flex: auto;
+                    font-size: 12px;
+                    color: #3D3C3C;
+                    font-family: DINRegular; }
+                    .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatTable table tbody tr td .params li img {
+                      margin-right: 5px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess {
+              margin-left: 50px;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              width: 100px;
+              -ms-flex-pack: center;
+              justify-content: center; }
+              .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess p {
+                color: #0084C9;
+                font-size: 18px;
+                font-family: DINRegular;
+                text-align: center; }
+              .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul {
+                width: 100%;
+                border: 1px solid #adb0bf; }
+                .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul li {
+                  text-align: center;
+                  border-bottom: 1px solid #d8dddd;
+                  background-color: #F0F5F5; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul li.active, .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul li:hover {
+                    border-bottom: 1px solid #75b0cf;
+                    background-color: #75B0CF; }
+                    .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul li.active a, .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul li:hover a {
+                      color: #fff; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .flatBlock .flatContent .flatAccess ul li a {
+                    display: block;
+                    color: #3D3C3C;
+                    padding: 5px 0;
+                    font-size: 14px;
+                    font-family: DINRegular;
+                    cursor: pointer; }
+        .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock {
+          margin-bottom: 30px;
+          display: block;
+          overflow: hidden; }
+          .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextImg {
+            float: left;
+            margin-right: 30px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextImg img {
+              max-width: 100%;
+              width: 100%; }
+          .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextContent h5 {
+            color: #575656;
+            font-size: 16px;
+            font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextContent p {
+            color: #575656;
+            font-size: 16px;
+            font-family: DINRegular; }
+          .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextContent ul {
+            margin-bottom: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextContent ul li {
+              margin-bottom: 5px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .aboutTextBlock .aboutTextContent ul li:before {
+                content: "";
+                display: block;
+                width: 15px;
+                height: 15px;
+                background: url(../images/check.png);
+                float: left;
+                margin-right: 5px;
+                margin-top: 2px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .compareBlock {
+          display: -ms-flexbox;
+          display: flex; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock p {
+            margin-bottom: 15px;
+            color: #5D6367;
+            font-size: 12px;
+            font-family: DINRegular; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock p.blue {
+              margin: 0;
+              color: #0168AF;
+              font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .htName {
+            height: 50px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .headDesc1 {
+            border-bottom: 1px solid #b0b0b1;
+            padding: 15px 20px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .headDesc2 {
+            border-bottom: 1px solid #b0b0b1;
+            padding: 15px 20px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .headDesc3 {
+            padding: 15px 20px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapLeft {
+            display: -ms-flexbox;
+            display: flex;
+            width: 155px;
+            float: left; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapLeft .leftHead {
+              background-color: #f0f5f5; }
+              .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapLeft .leftHead .headName {
+                padding: 15px 20px;
+                height: 300px;
+                border-bottom: 1px solid #b0b0b1; }
+                .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapLeft .leftHead .headName p {
+                  font-size: 12px;
+                  color: #0168AF;
+                  font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight {
+            width: calc(100% - 155px);
+            float: left;
+            overflow-x: auto;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc1, .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc2, .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc3 {
+              padding: 15px 25px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc1 span.address:before, .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc2 span.address:before, .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc3 span.address:before {
+                margin-top: 4px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc2 p {
+              font-size: 16px;
+              color: #575656;
+              font-family: DINRegular;
+              margin-bottom: 10px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc3 p {
+              font-size: 16px;
+              color: #575656;
+              font-family: DINRegular;
+              margin-bottom: 10px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .headDesc3 p.price {
+              font-size: 20px;
+              color: #0084c9;
+              font-family: DINBold; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .blockButton {
+              padding: 15px 25px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .blockButton a.defaultButton {
+                color: #FFF;
+                font-size: 14px;
+                font-family: DINBold;
+                padding: 12px 9px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .blockButton a.removeButton {
+                color: #9B9B9B;
+                font-size: 14px;
+                font-family: DINRegular;
+                border-bottom: 1px dashed #9B9B9B;
+                cursor: pointer; }
+            .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem {
+              width: 240px;
+              -ms-flex-negative: 0;
+              flex-shrink: 0; }
+              .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .htName p.blue {
+                font-size: 14px;
+                font-family: DINMedium;
+                color: #0084C9; }
+              .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap {
+                padding-left: 25px;
+                padding-right: 25px;
+                border-bottom: 1px solid #b0b0b1; }
+                .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap .itemName {
+                  height: 40px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap .itemName p {
+                    color: #0084C9;
+                    font-size: 20px;
+                    font-family: DINBold;
+                    padding-top: 10px;
+                    margin: 0; }
+                .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap .itemImg {
+                  height: 125px;
+                  padding-bottom: 10px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap .itemImg img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 100%; }
+                .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap .itemPlan {
+                  height: 134px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .compareBlock .wrapRight .compareItem .itemNameWrap .itemPlan img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 100%; }
+        .wrapper .page-content .pageContentWrap .mainColumn .sendmailBlock {
+          padding-top: 15px;
+          width: 100%;
+          padding-left: 180px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .sendmailBlock a.sendmailButton {
+            font-size: 14px;
+            color: #5D6367;
+            font-family: DINRegular;
+            display: inline-block;
+            padding: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            background: #badef1; }
+            .wrapper .page-content .pageContentWrap .mainColumn .sendmailBlock a.sendmailButton:hover {
+              opacity: 0.7; }
+        .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table {
+          border-collapse: collapse; }
+          .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table thead tr th {
+            color: #0168AF;
+            font-size: 12px;
+            font-family: DINRegular;
+            text-align: center;
+            padding: 15px 5px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tfoot tr td {
+            padding-top: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tfoot tr td a.defaultButton {
+              padding: 15px 10px;
+              margin-right: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tfoot tr td a.sendmailButton {
+              font-size: 14px;
+              color: #5D6367;
+              font-family: DINRegular;
+              display: inline-block;
+              padding: 15px;
+              border-radius: 3px;
+              cursor: pointer;
+              background: #badef1;
+              margin-left: 15px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tfoot tr td a.sendmailButton:hover {
+                opacity: 0.8; }
+          .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tbody tr:nth-child(odd) {
+            background: #F5F8F8; }
+          .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tbody tr td {
+            font-size: 12px;
+            color: #5d6367;
+            font-family: DINRegular;
+            vertical-align: middle;
+            padding: 5px 10px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tbody tr td span.final {
+              font-family: DINBold; }
+            .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tbody tr td a.remove {
+              cursor: pointer; }
+            .wrapper .page-content .pageContentWrap .mainColumn .favoritesTable table tbody tr td p.name {
+              margin-bottom: 0;
+              font-size: 14px;
+              font-family: DINMedium;
+              color: #0084C9; }
+        .wrapper .page-content .pageContentWrap .mainColumn .favoriteTextBlock {
+          margin-top: 25px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .favoriteTextBlock h4 {
+            color: #0084C9;
+            font-size: 18px;
+            font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .mainColumn .favoriteTextBlock p {
+            color: #5D6367;
+            font-size: 18px;
+            font-family: DINRegular; }
+            .wrapper .page-content .pageContentWrap .mainColumn .favoriteTextBlock p span {
+              color: #ff9027; }

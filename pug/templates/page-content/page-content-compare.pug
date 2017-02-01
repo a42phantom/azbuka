@@ -1,0 +1,11 @@
+include ../historyBack/historyBack.pug
+include ../flatBlock/flatBlock.pug
+include ../compareBlock/compareBlock.pug
+
+mixin page-content()
+	section.page-content
+		.pageContentWrap
+			.mainColumn
+				+historyBack('сравнение результатов')
+				+compareBlock()
+				+historyBack('Назад в избранное')
