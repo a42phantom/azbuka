@@ -1,3 +1,13 @@
-mixin formCalculation()
+mixin formCalculation(name)
 	.formCalculation
-		| formCalc
+		h4= name
+		form
+			input(type="text" placeholder="Как вас зовут?")
+			input(type="tel" placeholder="Телефон для связи")
+			input(type="email" placeholder="E-mail")
+			p Будьте уверены мы не рассылаем спам!
+			input(type="text" placeholder="Сумма первого взноса")
+			input(type="text" placeholder="Срок кредитования")
+			textarea(type="text")
+			input(type="text")
+			a.defaultButton сделать заявку

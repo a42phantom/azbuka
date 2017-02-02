@@ -400,7 +400,7 @@ a.defaultButton {
 			clear: both;
 			width: 100%;
 			display: block;
-			padding: 10px 15px;
+			padding: 10px 30px;
 			background-color: #98bfe3;
 			border: 1px solid #bfd7ee;
 			p {
@@ -409,6 +409,8 @@ a.defaultButton {
 				font-size: 13px;
 				text-align: justify;
 				line-height: 13px;
+				margin: 0;
+				font-family: DINMedium;
 			}
 		}
 	}
@@ -426,6 +428,7 @@ a.defaultButton {
 			>li {
 				flex:auto;
 				padding-left:25px;
+				text-transform: uppercase;
 				p {
 					color:#0084c9;
 					font-size:18px;
@@ -759,6 +762,7 @@ a.defaultButton {
 							font-size:14px;
 							b {
 								font-family:DINBold;
+								display: block;
 							}
 						}
 					}
@@ -766,6 +770,7 @@ a.defaultButton {
 						color: #0084C9;
 						font-family: DINBold;
 						font-size: 14px;
+						text-decoration: underline;
 					}
 				}
 			}
@@ -1171,6 +1176,9 @@ a.defaultButton {
 								margin-right: 15px;
 							}
 							.itemText {
+								h4 {
+									color: #000;
+								}
 								p {
 									font-size: 16px;
 									color: #5D6367;
@@ -1188,6 +1196,9 @@ a.defaultButton {
 							color: #5D6367;
 							font-size: 16px;
 							font-family: DINRegular;
+							span {
+								font-weight: bold;
+							}
 						}
 						blockquote {
 							font-size: 20px;
@@ -1799,6 +1810,11 @@ a.defaultButton {
 							color: #ff9027;
 						}
 					}
+				}
+				.formCalculation {
+					background: #F0F5F5;
+	        border-radius: 3px;
+	        padding: 20px;
 				}
 			}
 		}

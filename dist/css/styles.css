@@ -338,7 +338,7 @@ a.defaultButton {
     clear: both;
     width: 100%;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 30px;
     background-color: #98bfe3;
     border: 1px solid #bfd7ee; }
     .wrapper header .headerDescription p {
@@ -346,7 +346,9 @@ a.defaultButton {
       color: #fff;
       font-size: 13px;
       text-align: justify;
-      line-height: 13px; }
+      line-height: 13px;
+      margin: 0;
+      font-family: DINMedium; }
   .wrapper footer {
     clear: both;
     background-color: #f0f5f5; }
@@ -364,7 +366,8 @@ a.defaultButton {
       .wrapper footer ul.footerbigMenu > li {
         -ms-flex: auto;
         flex: auto;
-        padding-left: 25px; }
+        padding-left: 25px;
+        text-transform: uppercase; }
         .wrapper footer ul.footerbigMenu > li p {
           color: #0084c9;
           font-size: 18px;
@@ -640,11 +643,13 @@ a.defaultButton {
               font-family: DINRegular;
               font-size: 14px; }
               .wrapper .page-content .pageContentWrap .rightColumn .reviewsBlock .reviewsItem p b {
-                font-family: DINBold; }
+                font-family: DINBold;
+                display: block; }
           .wrapper .page-content .pageContentWrap .rightColumn .reviewsBlock a.viewAll {
             color: #0084C9;
             font-family: DINBold;
-            font-size: 14px; }
+            font-size: 14px;
+            text-decoration: underline; }
       .wrapper .page-content .pageContentWrap .mainColumn {
         width: 100%;
         padding: 30px;
@@ -983,6 +988,8 @@ a.defaultButton {
                 padding-right: 50px; }
               .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemImg {
                 margin-right: 15px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemText h4 {
+                color: #000; }
               .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemText p {
                 font-size: 16px;
                 color: #5D6367;
@@ -994,6 +1001,8 @@ a.defaultButton {
             color: #5D6367;
             font-size: 16px;
             font-family: DINRegular; }
+            .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .mainTextBlockContent p span {
+              font-weight: bold; }
           .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .mainTextBlockContent blockquote {
             font-size: 20px;
             color: #0084C9;
@@ -1462,3 +1471,7 @@ a.defaultButton {
             font-family: DINRegular; }
             .wrapper .page-content .pageContentWrap .mainColumn .favoriteTextBlock p span {
               color: #ff9027; }
+        .wrapper .page-content .pageContentWrap .mainColumn .formCalculation {
+          background: #F0F5F5;
+          border-radius: 3px;
+          padding: 20px; }
