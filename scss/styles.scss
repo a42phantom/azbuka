@@ -428,11 +428,11 @@ a.defaultButton {
 			>li {
 				flex:auto;
 				padding-left:25px;
-				text-transform: uppercase;
 				p {
 					color:#0084c9;
 					font-size:18px;
 					margin-bottom:10px;
+					font-family: DINBold;
 				}
 				ul {
 					li {
@@ -459,6 +459,7 @@ a.defaultButton {
 			li {
 				flex:1 0 auto;
 				text-align:center;
+				text-transform: uppercase;
 				a {
 					font-size:18px;
 					text-decoration:underline;
@@ -674,14 +675,18 @@ a.defaultButton {
 				}
 			}
 			.rightColumn {
+				padding:30px 20px;
+				width: 310px;
 				.accordion {
 					margin-bottom:30px;
 					&:nth-last-child(1) {
 						margin-bottom:0px;
 					}
 				}
-				padding:30px 20px;
-				width: 310px;
+				b {
+								font-family:DINBold;
+								display: block;
+							}
 				h4 {
 					color: #0084c9;
 					font-family: DINRegular;
@@ -760,10 +765,6 @@ a.defaultButton {
 							color: #575656;
 							font-family:DINRegular;
 							font-size:14px;
-							b {
-								font-family:DINBold;
-								display: block;
-							}
 						}
 					}
 					a.viewAll {
@@ -916,6 +917,23 @@ a.defaultButton {
 						width:235px;
 						flex: 1 auto;
 						margin:15px 20px;
+						&.start {
+							&:before {
+								content: "Старт продаж";
+								color: #fff;
+								width: 80px;
+								height: 80px;
+								display: block;
+								top: 80px;
+								right: 0px;
+								background-color: rgba(255, 125, 0, 0.7);
+								position: absolute;
+								border-radius: 50%;
+								text-align: center;
+								padding-top: 21px;
+								box-sizing: border-box;
+							}
+						}
 						.name {
 							width: 100%;
 							color: #0084C9;

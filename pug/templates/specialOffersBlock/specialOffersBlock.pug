@@ -1,7 +1,7 @@
 mixin specialOffersBlock(count)
 	.specialOffersBlock
 		- for (var x = 0; x < count; x++) 
-			.specialOffersItem
+			.specialOffersItem(class=x === 5 ? "start" : "")
 				p.name ЖК Карельский бриз
 				.imgBlock
 					p.price от 

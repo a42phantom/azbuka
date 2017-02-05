@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #fefefe;
   overflow-x: hidden; }
@@ -366,12 +367,12 @@ a.defaultButton {
       .wrapper footer ul.footerbigMenu > li {
         -ms-flex: auto;
         flex: auto;
-        padding-left: 25px;
-        text-transform: uppercase; }
+        padding-left: 25px; }
         .wrapper footer ul.footerbigMenu > li p {
           color: #0084c9;
           font-size: 18px;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          font-family: DINBold; }
         .wrapper footer ul.footerbigMenu > li ul li {
           margin-bottom: 5px; }
           .wrapper footer ul.footerbigMenu > li ul li a {
@@ -391,7 +392,8 @@ a.defaultButton {
       .wrapper footer ul.footerMiniMenu li {
         -ms-flex: 1 0 auto;
         flex: 1 0 auto;
-        text-align: center; }
+        text-align: center;
+        text-transform: uppercase; }
         .wrapper footer ul.footerMiniMenu li a {
           font-size: 18px;
           text-decoration: underline;
@@ -579,6 +581,9 @@ a.defaultButton {
           margin-bottom: 30px; }
           .wrapper .page-content .pageContentWrap .rightColumn .accordion:nth-last-child(1) {
             margin-bottom: 0px; }
+        .wrapper .page-content .pageContentWrap .rightColumn b {
+          font-family: DINBold;
+          display: block; }
         .wrapper .page-content .pageContentWrap .rightColumn h4 {
           color: #0084c9;
           font-family: DINRegular;
@@ -642,9 +647,6 @@ a.defaultButton {
               color: #575656;
               font-family: DINRegular;
               font-size: 14px; }
-              .wrapper .page-content .pageContentWrap .rightColumn .reviewsBlock .reviewsItem p b {
-                font-family: DINBold;
-                display: block; }
           .wrapper .page-content .pageContentWrap .rightColumn .reviewsBlock a.viewAll {
             color: #0084C9;
             font-family: DINBold;
@@ -784,6 +786,20 @@ a.defaultButton {
             -ms-flex: 1 auto;
             flex: 1 auto;
             margin: 15px 20px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem.start:before {
+              content: "Старт продаж";
+              color: #fff;
+              width: 80px;
+              height: 80px;
+              display: block;
+              top: 80px;
+              right: 0px;
+              background-color: rgba(255, 125, 0, 0.7);
+              position: absolute;
+              border-radius: 50%;
+              text-align: center;
+              padding-top: 21px;
+              box-sizing: border-box; }
             .wrapper .page-content .pageContentWrap .mainColumn .specialOffersBlock .specialOffersItem .name {
               width: 100%;
               color: #0084C9;
