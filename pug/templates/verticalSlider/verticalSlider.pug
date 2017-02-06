@@ -1,0 +1,63 @@
+mixin verticalSlider1()
+	.verticalSliderWrap
+		h2 Похожие ЖК в этом районе
+		.verticalSlider#verticalSlider1
+			.view-port
+				.slider-container
+					-for(x=0;x<10;x++)
+						.item
+							.specialOffersItem(class=x === 5 ? "start" : "")
+								p.name ЖК Карельский бриз
+								.imgBlock
+									p.price от 
+										span 3.508
+										|  млн.р
+									img(src="images/pic1.png")
+								ul.params
+									li
+										img(src="images/otdelka-ico.png")
+										| Отделка
+									li
+										img(src="images/214-ico.png")
+										| 214 ФЗ
+									li
+										img(src="images/ipoteka-ico.png")
+										| Ипотека
+								p.description
+									span.address.red м.Рыбацкое, 20 мин. пешком
+									span.date Срок сдачи ||| квартал 2-15г.
+			.pagination
+				a.prev(href="#")
+				a.next(href="#")
+
+mixin verticalSlider2()
+	.verticalSliderWrap
+		h2 Похожие ЖК в этом районе
+		.verticalSlider#verticalSlider2
+			.view-port
+				.slider-container
+					-for(x=0;x<10;x++)
+						.item
+							.specialOffersItem(class=x === 5 ? "start" : "")
+								p.name ЖК Карельский бриз
+								.imgBlock
+									p.price от 
+										span 3.508
+										|  млн.р
+									img(src="images/pic1.png")
+								ul.params
+									li
+										img(src="images/otdelka-ico.png")
+										| Отделка
+									li
+										img(src="images/214-ico.png")
+										| 214 ФЗ
+									li
+										img(src="images/ipoteka-ico.png")
+										| Ипотека
+								p.description
+									span.address.red м.Рыбацкое, 20 мин. пешком
+									span.date Срок сдачи ||| квартал 2-15г.
+			.pagination
+				a.prev(href="#")
+				a.next(href="#")

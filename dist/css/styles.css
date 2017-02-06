@@ -3,6 +3,15 @@ body {
   background: #fefefe;
   overflow-x: hidden; }
 
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-bottom: 15px; }
+
+.row {
+  overflow: hidden; }
+
 h1 {
   color: #0084c9;
   font-family: DINLight;
@@ -74,7 +83,7 @@ p {
   color: #575656;
   font-family: DINRegular;
   font-size: 16px;
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
 span.address {
   display: block; }
@@ -127,10 +136,10 @@ a.defaultButton {
   font-size: 18px;
   display: inline-block;
   text-transform: uppercase;
-  padding: 23px 15px;
+  padding: 15px 10px;
   background-color: #0084c9;
-  border: 3px solid #0168af;
-  border-radius: 5px;
+  border: 1px solid #0168af;
+  border-radius: 3px;
   line-height: 18px; }
   a.defaultButton:hover {
     background-color: #33a9e7; }
@@ -140,6 +149,95 @@ a.defaultButton {
 
 .leftAlign {
   text-align: left; }
+
+.ui-slider {
+  position: relative; }
+  .ui-slider .ui-slider-range {
+    background-color: #FFF;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
+  .ui-slider .ui-slider-handle {
+    width: 9px;
+    height: 17px;
+    display: block;
+    background-image: url(../images/handle.png);
+    outline: none;
+    position: absolute;
+    bottom: -18px;
+    margin-left: -4px;
+    cursor: pointer; }
+  .ui-slider .uiWrapSlider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; }
+
+.uiCheckRadio .ui-checkboxradio-label {
+  cursor: pointer;
+  display: block;
+  float: left;
+  border: 1px solid #cccece;
+  background: #fff;
+  border-right: 0;
+  padding: 5px 10px;
+  color: #5D6367;
+  font-family: DINRegular;
+  font-size: 16px; }
+  .uiCheckRadio .ui-checkboxradio-label:nth-last-child(1) {
+    border-right: 1px solid #cccece; }
+  .uiCheckRadio .ui-checkboxradio-label input {
+    display: none; }
+  .uiCheckRadio .ui-checkboxradio-label.ui-checkboxradio-checked, .uiCheckRadio .ui-checkboxradio-label:hover {
+    background: #98BFE3;
+    color: #fff; }
+
+.verticalSlider {
+  position: relative;
+  padding: 50px 0; }
+  .verticalSlider#verticalSlider1 .view-port {
+    height: 830px; }
+  .verticalSlider#verticalSlider2 .view-port {
+    height: 570px; }
+  .verticalSlider .view-port {
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+  .verticalSlider .slider-container {
+    position: relative;
+    margin: 0;
+    padding: 0; }
+  .verticalSlider .item {
+    position: absolute;
+    width: 100%; }
+  .verticalSlider .pagination {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .verticalSlider .pagination a {
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      width: 100%;
+      height: 30px; }
+      .verticalSlider .pagination a.prev {
+        top: 0;
+        background-image: url(../images/arrow-up.png); }
+        .verticalSlider .pagination a.prev.disabled {
+          background-image: url(../images/arrow-up-disabled.png); }
+      .verticalSlider .pagination a.next {
+        bottom: 0;
+        background-image: url(../images/arrow-down.png); }
+        .verticalSlider .pagination a.next.disabled {
+          background-image: url(../images/arrow-down-disabled.png); }
 
 .jq-checkbox {
   background-color: #fff;
@@ -230,7 +328,8 @@ a.defaultButton {
     right: 20px;
     bottom: 15px;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    z-index: 2; }
     .owl-carousel .owl-dots .owl-dot {
       background-color: #fff;
       width: 12px;
@@ -404,6 +503,289 @@ a.defaultButton {
   .wrapper .page-content {
     padding: 0;
     width: 100%; }
+    .wrapper .page-content .filterBlock {
+      border-radius: 5px;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      background: #F0F5F5;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      padding: 20px;
+      display: flex; }
+      .wrapper .page-content .filterBlock #slider-range5 .uiWrapSlider {
+        background-image: url(../images/firstPayBG.png);
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: -4px 2px; }
+      .wrapper .page-content .filterBlock #slider-range6 .uiWrapSlider {
+        background-image: url(../images/periodPayBG.png);
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: 13px 2px; }
+      .wrapper .page-content .filterBlock.bord {
+        border: 1px solid #b5b7c7; }
+      .wrapper .page-content .filterBlock.row {
+        -ms-flex-direction: row;
+        flex-direction: row; }
+      .wrapper .page-content .filterBlock.col {
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      .wrapper .page-content .filterBlock .firstPayBlock {
+        padding-right: 20px; }
+        .wrapper .page-content .filterBlock .firstPayBlock .filterLine1 {
+          margin-top: 40px; }
+          .wrapper .page-content .filterBlock .firstPayBlock .filterLine1 .jqLabel {
+            margin-right: 30px; }
+        .wrapper .page-content .filterBlock .firstPayBlock label {
+          color: #0168AF;
+          font-family: DINMedium;
+          font-size: 16px;
+          margin-bottom: 10px; }
+          .wrapper .page-content .filterBlock .firstPayBlock label input {
+            margin-left: 10px;
+            width: 60px;
+            border: 1px solid #c4c5c5;
+            text-align: center; }
+          .wrapper .page-content .filterBlock .firstPayBlock label span {
+            margin-left: 10px;
+            font-style: 16px;
+            color: #5d6367;
+            font-family: DINRegular; }
+        .wrapper .page-content .filterBlock .firstPayBlock .ui-slider {
+          height: 30px;
+          border: 1px solid #d3d4d4;
+          border-radius: 3px;
+          background-color: #d1e4f7; }
+      .wrapper .page-content .filterBlock .periodPayBlock {
+        padding-left: 20px; }
+        .wrapper .page-content .filterBlock .periodPayBlock .filterLine1 {
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          margin-top: 20px; }
+          .wrapper .page-content .filterBlock .periodPayBlock .filterLine1 a.defaultButton {
+            color: #FFF;
+            font-size: 21px;
+            font-family: DINBold;
+            background: #4093d2;
+            border: 1px solid #4785ba;
+            border-radius: 3px;
+            width: 235px;
+            height: 52px;
+            display: block;
+            padding: 15px 0;
+            text-transform: uppercase;
+            text-align: center; }
+        .wrapper .page-content .filterBlock .periodPayBlock label {
+          color: #0168AF;
+          font-family: DINMedium;
+          font-size: 16px;
+          margin-bottom: 10px; }
+          .wrapper .page-content .filterBlock .periodPayBlock label input {
+            margin-left: 10px;
+            width: 60px;
+            border: 1px solid #c4c5c5;
+            text-align: center; }
+          .wrapper .page-content .filterBlock .periodPayBlock label span {
+            margin-left: 10px;
+            font-style: 16px;
+            color: #5d6367;
+            font-family: DINRegular; }
+        .wrapper .page-content .filterBlock .periodPayBlock .ui-slider {
+          height: 30px;
+          border: 1px solid #d3d4d4;
+          border-radius: 3px;
+          background-color: #d1e4f7; }
+      .wrapper .page-content .filterBlock .searchBlock {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-bottom: 20px; }
+        .wrapper .page-content .filterBlock .searchBlock .searchInput {
+          color: #4785BA;
+          font-size: 19px;
+          font-family: DINRegular;
+          -ms-flex: auto;
+          flex: auto;
+          padding-right: 25px; }
+          .wrapper .page-content .filterBlock .searchBlock .searchInput input {
+            width: 100%;
+            border: 1px solid #d7dada;
+            border-radius: 3px;
+            padding: 16px 10px;
+            outline: none; }
+        .wrapper .page-content .filterBlock .searchBlock .searchButton a {
+          color: #FFF;
+          font-size: 21px;
+          font-family: DINBold;
+          background: #4093d2;
+          border: 1px solid #4785ba;
+          border-radius: 3px;
+          width: 250px;
+          display: block;
+          padding: 15px 0;
+          text-transform: uppercase;
+          text-align: center; }
+      .wrapper .page-content .filterBlock .filterLine2 {
+        margin-top: 20px; }
+      .wrapper .page-content .filterBlock .filterLine1, .wrapper .page-content .filterBlock .filterLine2 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .wrapper .page-content .filterBlock .filterLine1 p, .wrapper .page-content .filterBlock .filterLine2 p {
+          color: #0168AF;
+          font-family: DINMedium;
+          font-size: 16px;
+          margin-bottom: 10px; }
+        .wrapper .page-content .filterBlock .filterLine1 a, .wrapper .page-content .filterBlock .filterLine2 a {
+          border-radius: 0;
+          border: 0;
+          padding: 10px 0;
+          width: 140px;
+          text-align: center;
+          font-size: 14px;
+          font-family: DINRegular;
+          height: 38px; }
+        .wrapper .page-content .filterBlock .filterLine1 > div, .wrapper .page-content .filterBlock .filterLine2 > div {
+          -ms-flex: auto;
+          flex: auto; }
+        .wrapper .page-content .filterBlock .filterLine1 .wrapCheckBox, .wrapper .page-content .filterBlock .filterLine2 .wrapCheckBox {
+          -ms-flex-direction: column;
+          flex-direction: column;
+          display: -ms-flexbox;
+          display: flex; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapCheckBox label, .wrapper .page-content .filterBlock .filterLine2 .wrapCheckBox label {
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -ms-flex: auto;
+            flex: auto;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: 14px;
+            color: #3d3c3c;
+            font-family: DINRegular; }
+            .wrapper .page-content .filterBlock .filterLine1 .wrapCheckBox label div, .wrapper .page-content .filterBlock .filterLine2 .wrapCheckBox label div {
+              margin-bottom: -3px; }
+        .wrapper .page-content .filterBlock .filterLine1 .wrapButton, .wrapper .page-content .filterBlock .filterLine2 .wrapButton {
+          display: -ms-flexbox;
+          display: flex; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapButton.mb, .wrapper .page-content .filterBlock .filterLine2 .wrapButton.mb {
+            -ms-flex-align: end;
+            align-items: flex-end;
+            margin-bottom: -8px; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapButton.selectZone, .wrapper .page-content .filterBlock .filterLine2 .wrapButton.selectZone {
+            margin-right: 20px;
+            -ms-flex: none;
+            flex: none;
+            -ms-flex-align: center;
+            align-items: center; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapButton.selectMetro, .wrapper .page-content .filterBlock .filterLine2 .wrapButton.selectMetro {
+            margin-right: 20px;
+            -ms-flex: none;
+            flex: none; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapButton.viewMap, .wrapper .page-content .filterBlock .filterLine2 .wrapButton.viewMap {
+            -ms-flex: none;
+            flex: none; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapButton a.search, .wrapper .page-content .filterBlock .filterLine2 .wrapButton a.search {
+            width: 240px;
+            padding: 15px 0;
+            border-radius: 3px;
+            border: 3px solid #4785ba;
+            height: 52px; }
+          .wrapper .page-content .filterBlock .filterLine1 .wrapButton label, .wrapper .page-content .filterBlock .filterLine2 .wrapButton label {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center; }
+        .wrapper .page-content .filterBlock .filterLine1 .areaFilter p, .wrapper .page-content .filterBlock .filterLine1 .priceFilter p, .wrapper .page-content .filterBlock .filterLine2 .areaFilter p, .wrapper .page-content .filterBlock .filterLine2 .priceFilter p {
+          color: #0168AF;
+          font-family: DINMedium;
+          font-size: 16px;
+          margin-bottom: 10px; }
+        .wrapper .page-content .filterBlock .filterLine1 .areaFilter .ui-slider, .wrapper .page-content .filterBlock .filterLine1 .priceFilter .ui-slider, .wrapper .page-content .filterBlock .filterLine2 .areaFilter .ui-slider, .wrapper .page-content .filterBlock .filterLine2 .priceFilter .ui-slider {
+          width: 260px;
+          height: 30px;
+          border: 1px solid #d3d4d4;
+          border-radius: 3px;
+          background-color: #d1e4f7; }
+        .wrapper .page-content .filterBlock .filterLine1 .areaFilter #slider-range1, .wrapper .page-content .filterBlock .filterLine1 .priceFilter #slider-range1, .wrapper .page-content .filterBlock .filterLine2 .areaFilter #slider-range1, .wrapper .page-content .filterBlock .filterLine2 .priceFilter #slider-range1 {
+          color: #000; }
+          .wrapper .page-content .filterBlock .filterLine1 .areaFilter #slider-range1 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine1 .priceFilter #slider-range1 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .areaFilter #slider-range1 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .priceFilter #slider-range1 .uiWrapSlider {
+            background-image: url(../images/areaFilterBG.png);
+            background-repeat: no-repeat;
+            background-size: 95%;
+            background-position: 12px 2px; }
+        .wrapper .page-content .filterBlock .filterLine1 .areaFilter #slider-range2 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine1 .priceFilter #slider-range2 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .areaFilter #slider-range2 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .priceFilter #slider-range2 .uiWrapSlider {
+          background-image: url(../images/priceFilterBG.png);
+          background-repeat: no-repeat;
+          background-size: 95%;
+          background-position: 2px 2px; }
+        .wrapper .page-content .filterBlock .filterLine1 .areaFilter #slider-range3 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine1 .priceFilter #slider-range3 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .areaFilter #slider-range3 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .priceFilter #slider-range3 .uiWrapSlider {
+          background-image: url(../images/areaFilterBG2.png);
+          background-repeat: no-repeat;
+          background-size: 95%;
+          background-position: 2px 2px; }
+        .wrapper .page-content .filterBlock .filterLine1 .areaFilter #slider-range4 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine1 .priceFilter #slider-range4 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .areaFilter #slider-range4 .uiWrapSlider, .wrapper .page-content .filterBlock .filterLine2 .priceFilter #slider-range4 .uiWrapSlider {
+          background-image: url(../images/readyScale.png);
+          background-repeat: no-repeat;
+          background-size: 95%;
+          background-position: 2px 2px; }
+      .wrapper .page-content .filterBlock > div {
+        -ms-flex: auto;
+        flex: auto; }
+      .wrapper .page-content .filterBlock .numbersRooms .jqLabel, .wrapper .page-content .filterBlock .area .jqLabel, .wrapper .page-content .filterBlock .price .jqLabel {
+        margin-right: 20px; }
+      .wrapper .page-content .filterBlock .numbersRooms p, .wrapper .page-content .filterBlock .area p, .wrapper .page-content .filterBlock .price p {
+        color: #0168AF;
+        font-family: DINMedium;
+        font-size: 16px;
+        margin-bottom: 10px; }
+      .wrapper .page-content .filterBlock .area input {
+        outline: none;
+        width: 30px;
+        display: block;
+        float: left;
+        border: 1px solid #cccece;
+        padding: 5px 3px;
+        color: #5D6367;
+        font-family: DINRegular;
+        font-size: 16px; }
+      .wrapper .page-content .filterBlock .area label {
+        float: left;
+        outline: none;
+        display: block;
+        float: left;
+        padding: 5px 10px;
+        color: #5D6367;
+        font-family: DINRegular;
+        font-size: 16px; }
+      .wrapper .page-content .filterBlock .price input {
+        outline: none;
+        width: 65px;
+        display: block;
+        float: left;
+        border: 1px solid #cccece;
+        padding: 5px 3px;
+        color: #5D6367;
+        font-family: DINRegular;
+        font-size: 16px; }
+      .wrapper .page-content .filterBlock .price label {
+        float: left;
+        outline: none;
+        /* width: 20px; */
+        display: block;
+        float: left;
+        padding: 5px 10px;
+        color: #5D6367;
+        font-family: DINRegular;
+        font-size: 16px; }
+      .wrapper .page-content .filterBlock .button a {
+        display: block;
+        text-align: center;
+        width: 210px;
+        margin-top: 10px; }
     .wrapper .page-content .slidermainPage {
       padding: 30px 30px 0 30px;
       width: 100%; }
@@ -411,7 +793,7 @@ a.defaultButton {
         width: 100%; }
         .wrapper .page-content .slidermainPage .tabs ul {
           position: relative;
-          bottom: -4px; }
+          bottom: -1px; }
           .wrapper .page-content .slidermainPage .tabs ul li {
             font-size: 16px;
             line-height: 16px;
@@ -440,14 +822,16 @@ a.defaultButton {
             .wrapper .page-content .slidermainPage .tabs ul li:nth-child(1):before {
               display: none; }
             .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active {
-              background-color: #0084c9;
-              color: #fff;
-              z-index: 11;
-              border-color: #0084c9; }
-              .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active a {
+              z-index: 15; }
+              .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active.slideTabs {
+                background-color: #0084c9;
                 color: #fff;
-                text-decoration: none; }
-            .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active:after, .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active:before {
+                z-index: 11;
+                border-color: #0084c9; }
+                .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active.slideTabs a {
+                  color: #fff;
+                  text-decoration: none; }
+            .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active.slideTabs:after, .wrapper .page-content .slidermainPage .tabs ul li.ui-tabs-active.slideTabs:before {
               z-index: -1;
               border-color: #0084c9; }
             .wrapper .page-content .slidermainPage .tabs ul li:after, .wrapper .page-content .slidermainPage .tabs ul li:before {
@@ -474,12 +858,17 @@ a.defaultButton {
         .wrapper .page-content .slidermainPage .tabs > div {
           overflow: hidden;
           padding: 0;
-          border-radius: 5px;
-          border: 17px solid #0084c9;
           z-index: 12;
           position: relative; }
           .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem {
-            padding: 15px; }
+            border: 1px solid #b5b7c7;
+            border-radius: 5px;
+            border-top-left-radius: 0; }
+            .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem.slideTabs {
+              border: 17px solid #0084c9;
+              overflow: hidden;
+              padding: 15px;
+              border-top-left-radius: 5px; }
             .wrapper .page-content .slidermainPage .tabs > div > div.tabsItem .slideDesc {
               position: absolute;
               top: 45px;
@@ -576,7 +965,7 @@ a.defaultButton {
                 cursor: pointer; }
       .wrapper .page-content .pageContentWrap .rightColumn {
         padding: 30px 20px;
-        width: 310px; }
+        width: 350px; }
         .wrapper .page-content .pageContentWrap .rightColumn .accordion {
           margin-bottom: 30px; }
           .wrapper .page-content .pageContentWrap .rightColumn .accordion:nth-last-child(1) {
@@ -596,6 +985,179 @@ a.defaultButton {
           outline: none; }
           .wrapper .page-content .pageContentWrap .rightColumn h4:hover {
             text-decoration: none; }
+        .wrapper .page-content .pageContentWrap .rightColumn .calcBlock {
+          width: 100%;
+          background: #f0f5f5;
+          border: 1px solid #b9b9ca;
+          border-radius: 3px;
+          margin-top: 58px;
+          padding: 15px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .calcBlock h2 {
+            color: #0084C9;
+            font-size: 23px;
+            font-family: DINLight;
+            margin-bottom: 15px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .calcBlock label {
+            color: #0168AF;
+            font-family: DINMedium;
+            font-size: 14px;
+            overflow: hidden;
+            display: block;
+            margin-bottom: 5px;
+            width: 100%; }
+          .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .formGroup {
+            overflow: hidden; }
+            .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .formGroup input {
+              outline: none;
+              padding: 5px 10px;
+              margin-top: 5px;
+              color: #5D6367;
+              font-size: 16px;
+              font-family: DINRegular;
+              float: left;
+              border: 1px solid #cfd1d1;
+              border-radius: 3px; }
+              .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .formGroup input.price {
+                width: 120px; }
+              .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .formGroup input.firstPay {
+                width: 120px; }
+              .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .formGroup input.age {
+                width: 55px; }
+              .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .formGroup input.percent {
+                width: 55px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .calcBlock p {
+            float: left;
+            margin: 0;
+            padding: 10px 5px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .calcBlock button {
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+            background: #4696d3;
+            border: 1px solid #1077b2;
+            border-radius: 3px;
+            color: #FFF;
+            font-family: DINBold;
+            font-size: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 15px;
+            cursor: pointer; }
+            .wrapper .page-content .pageContentWrap .rightColumn .calcBlock button:hover {
+              background-color: #33a9e7; }
+          .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .result {
+            width: 100%;
+            display: block;
+            overflow: hidden; }
+            .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .result p {
+              color: #0168AF;
+              font-family: DINMedium;
+              font-size: 14px;
+              margin: 0;
+              margin-top: 15px;
+              padding: 0; }
+              .wrapper .page-content .pageContentWrap .rightColumn .calcBlock .result p span {
+                color: #FF9027;
+                font-size: 26px;
+                font-family: DINMedium; }
+        .wrapper .page-content .pageContentWrap .rightColumn .likeHouse {
+          width: 100%;
+          background: #f0f5f5;
+          border: 1px solid #b9b9ca;
+          border-radius: 3px;
+          margin-top: 25px;
+          padding: 15px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .likeHouse h3 {
+            color: #0084c9;
+            font-size: 18px;
+            font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .rightColumn .likeHouse p {
+            color: #575656;
+            font-size: 14px;
+            font-family: DINRegular; }
+            .wrapper .page-content .pageContentWrap .rightColumn .likeHouse p span {
+              font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .rightColumn .likeHouse a {
+            display: block;
+            text-align: center; }
+        .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap h2 {
+          color: #5d6367;
+          font-size: 23px;
+          font-family: DINLight;
+          margin: 30px 0 15px 0; }
+        .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider {
+          margin-top: 30px; }
+          .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem {
+            margin: 15px 0;
+            width: 100%;
+            -ms-flex: 1 auto;
+            flex: 1 auto; }
+            .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem.start:before {
+              content: "Старт продаж";
+              color: #fff;
+              width: 80px;
+              height: 80px;
+              display: block;
+              top: 80px;
+              right: 0px;
+              background-color: rgba(255, 125, 0, 0.7);
+              position: absolute;
+              border-radius: 50%;
+              text-align: center;
+              padding-top: 21px;
+              box-sizing: border-box; }
+            .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .name {
+              width: 100%;
+              color: #0084C9;
+              font-size: 20px;
+              font-family: DINRegular;
+              text-decoration: underline;
+              margin-bottom: 25px; }
+            .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .imgBlock {
+              display: block;
+              width: 100%;
+              position: relative;
+              margin-bottom: 10px; }
+              .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .imgBlock p.price {
+                padding: 7px 10px;
+                background-color: #0084C9;
+                position: absolute;
+                top: -15px;
+                left: 0;
+                font-family: DINRegular;
+                font-size: 14px;
+                line-height: 14px;
+                color: #fff;
+                margin: 0; }
+                .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .imgBlock p.price span {
+                  font-family: DINBold;
+                  font-size: 20px;
+                  color: #fff; }
+              .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .imgBlock img {
+                max-width: 100%;
+                width: 100%; }
+            .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .params {
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-direction: row;
+              flex-direction: row;
+              margin-bottom: 10px; }
+              .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .params li {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex: auto;
+                flex: auto;
+                font-size: 12px;
+                color: #3D3C3C;
+                font-family: DINRegular; }
+                .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem .params li img {
+                  margin-right: 5px; }
+            .wrapper .page-content .pageContentWrap .rightColumn .verticalSliderWrap .verticalSlider .specialOffersItem p.description {
+              color: #5D6367;
+              font-family: DINRegular;
+              font-size: 14px; }
         .wrapper .page-content .pageContentWrap .rightColumn .newsBlock {
           margin-bottom: 25px; }
           .wrapper .page-content .pageContentWrap .rightColumn .newsBlock .newsItem {
@@ -657,6 +1219,105 @@ a.defaultButton {
         padding: 30px;
         -ms-flex: auto;
         flex: auto; }
+        .wrapper .page-content .pageContentWrap .mainColumn > h3 {
+          margin-top: 30px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .attentionBlock {
+          width: 565px;
+          height: 115px;
+          display: block;
+          float: left;
+          background: url(../images/attention-back.png);
+          padding-left: 50px;
+          padding-top: 8px;
+          background-repeat: no-repeat;
+          background-size: cover; }
+          .wrapper .page-content .pageContentWrap .mainColumn .attentionBlock h4 {
+            font-size: 28px;
+            color: #FFF;
+            font-family: DINBold;
+            text-transform: uppercase;
+            margin-bottom: 5px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .attentionBlock p {
+            font-size: 18px;
+            color: #FFF;
+            font-family: DINRegular;
+            margin-bottom: 0; }
+        .wrapper .page-content .pageContentWrap .mainColumn .callbackRentBlock {
+          float: left;
+          display: block;
+          width: 545px;
+          padding-left: 45px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .callbackRentBlock h5 {
+            margin-bottom: 10px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .callbackRentBlock a.callback {
+            font-family: DINBold;
+            font-size: 19px;
+            line-height: 19px;
+            color: #FFF;
+            background: #98bfe3;
+            width: 192px;
+            text-align: center;
+            /* height: 46px; */
+            padding: 10px 5px;
+            display: block;
+            border-radius: 3px;
+            text-transform: uppercase; }
+        .wrapper .page-content .pageContentWrap .mainColumn .saleForm {
+          width: 450px;
+          float: left;
+          display: block;
+          overflow: hidden; }
+          .wrapper .page-content .pageContentWrap .mainColumn .saleForm form .formGroup {
+            -ms-flex-direction: row;
+            flex-direction: row;
+            display: -ms-flexbox;
+            display: flex; }
+            .wrapper .page-content .pageContentWrap .mainColumn .saleForm form .formGroup input {
+              outline: none;
+              width: 100%;
+              height: 38px;
+              color: #C4C5C5;
+              font-size: 16px;
+              font-family: DINRegular;
+              padding: 15px;
+              border-radius: 3px;
+              border: 1px solid #c4c5c5;
+              margin-bottom: 10px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .saleForm form .formGroup input.captcha {
+                width: 200px;
+                margin-right: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .saleForm form .formGroup textarea {
+              overflow-y: auto;
+              resize: none;
+              outline: none;
+              width: 100%;
+              color: #C4C5C5;
+              font-size: 16px;
+              font-family: DINRegular;
+              padding: 15px;
+              border-radius: 3px;
+              border: 1px solid #c4c5c5;
+              margin-bottom: 10px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .saleTextBlock {
+          padding-left: 60px;
+          width: 660px;
+          float: left;
+          display: block;
+          overflow: hidden; }
+          .wrapper .page-content .pageContentWrap .mainColumn .saleTextBlock p {
+            color: #5D6367;
+            font-size: 16px;
+            font-family: DINRegular; }
+            .wrapper .page-content .pageContentWrap .mainColumn .saleTextBlock p b {
+              font-family: DINMedium; }
+          .wrapper .page-content .pageContentWrap .mainColumn .saleTextBlock ul {
+            list-style-type: disc;
+            color: #0084c9;
+            padding-left: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .saleTextBlock ul li {
+              margin-bottom: 5px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .saleTextBlock ul li span {
+                color: #5D6367; }
         .wrapper .page-content .pageContentWrap .mainColumn .tabs {
           width: 100%; }
           .wrapper .page-content .pageContentWrap .mainColumn .tabs > ul {
@@ -905,6 +1566,36 @@ a.defaultButton {
               font-size: 16px;
               line-height: 16px;
               font-family: DINBold; }
+        .wrapper .page-content .pageContentWrap .mainColumn .filterWrap {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          margin-bottom: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .filterWrap .filterBlock {
+            margin-right: 50px;
+            width: 845px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .calcTextWrap {
+          margin-bottom: 30px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .callbackBlock {
+          width: 230px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .callbackBlock a {
+            display: block;
+            width: 100%;
+            background: #0084C9;
+            color: #FFF;
+            font-family: DINBold;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 20px 10px;
+            border: 1px solid #4785ba;
+            border-radius: 3px;
+            cursor: pointer; }
+            .wrapper .page-content .pageContentWrap .mainColumn .callbackBlock a.callbackPhone {
+              margin-bottom: 20px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .callbackBlock a img {
+              float: left;
+              margin-right: 10px; }
         .wrapper .page-content .pageContentWrap .mainColumn .pageAboutJob .accordion h4 {
           outline: none; }
           .wrapper .page-content .pageContentWrap .mainColumn .pageAboutJob .accordion h4 span {
@@ -986,6 +1677,36 @@ a.defaultButton {
         .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock {
           margin-top: 30px;
           margin-bottom: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock h4 {
+            color: #0084C9;
+            font-size: 20px;
+            font-family: DINBold; }
+          .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock a.enterBase {
+            display: inline-block;
+            padding: 20px 15px;
+            border-radius: 3px;
+            background: #0084C9;
+            border: 3px solid #0168af;
+            border-right: 0;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: DINMedium;
+            position: relative; }
+            .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock a.enterBase:after {
+              position: absolute;
+              display: block;
+              content: "";
+              /* width: 50px; */
+              /* height: 50px; */
+              /* background: #0084c9; */
+              border-top: 32px solid transparent;
+              border-left: 30px solid #0084c9;
+              border-bottom: 32px solid transparent;
+              right: -29px;
+              top: -2px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock a.callbackButton {
+            margin-bottom: 30px; }
           .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock {
             display: -ms-flexbox;
             display: flex;
@@ -1000,6 +1721,8 @@ a.defaultButton {
               -ms-flex-direction: row;
               flex-direction: row;
               margin-bottom: 25px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem.col33 {
+                width: calc(100% / 3); }
               .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem:nth-child(odd) .itemText {
                 padding-right: 50px; }
               .wrapper .page-content .pageContentWrap .mainColumn .mainTextBlock .whyBestBlock .whyBestItem .itemImg {
@@ -1024,8 +1747,6 @@ a.defaultButton {
             color: #0084C9;
             font-family: DINRegular;
             margin: 20px; }
-        .wrapper .page-content .pageContentWrap .mainColumn .filterBlock {
-          margin-bottom: 30px; }
         .wrapper .page-content .pageContentWrap .mainColumn .listBlockButton {
           margin-top: 30px; }
           .wrapper .page-content .pageContentWrap .mainColumn .listBlockButton p {
@@ -1091,7 +1812,8 @@ a.defaultButton {
           margin-top: 30px;
           margin-bottom: 30px; }
           .wrapper .page-content .pageContentWrap .mainColumn .searchList table {
-            width: 100%; }
+            width: 100%;
+            border-collapse: collapse; }
             .wrapper .page-content .pageContentWrap .mainColumn .searchList table thead tr {
               background-color: #F0F5F5; }
               .wrapper .page-content .pageContentWrap .mainColumn .searchList table thead tr th {
@@ -1134,6 +1856,59 @@ a.defaultButton {
                   background: url("../images/starActive.png"); }
                 .wrapper .page-content .pageContentWrap .mainColumn .searchList table tbody tr td.toFavorite a:hover {
                   background: url("../images/starActive.png"); }
+        .wrapper .page-content .pageContentWrap .mainColumn .rentTable {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          clear: both;
+          display: block;
+          overflow: hidden; }
+          .wrapper .page-content .pageContentWrap .mainColumn .rentTable table {
+            width: 100%;
+            border-collapse: collapse; }
+            .wrapper .page-content .pageContentWrap .mainColumn .rentTable table thead tr {
+              background-color: #F0F5F5; }
+              .wrapper .page-content .pageContentWrap .mainColumn .rentTable table thead tr th {
+                padding: 20px 10px;
+                text-align: left;
+                vertical-align: bottom; }
+                .wrapper .page-content .pageContentWrap .mainColumn .rentTable table thead tr th a {
+                  font-family: DINRegular;
+                  font-size: 12px;
+                  color: #0168AF;
+                  text-decoration: underline; }
+            .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr {
+              color: #5D6367;
+              font-size: 14px;
+              font-family: DINRegular; }
+              .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr:nth-child(even) {
+                background-color: #F0F5F5; }
+              .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td {
+                text-align: left;
+                vertical-align: top;
+                padding: 10px 0px 20px 10px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td.name a {
+                color: #0084C9;
+                font-size: 14px;
+                font-family: DINMedium;
+                text-decoration: underline;
+                cursor: pointer; }
+                .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td.name a:hover {
+                  text-decoration: none; }
+              .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td.desc {
+                max-width: 300px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td.toFavorite a {
+                margin: auto;
+                width: 32px;
+                height: 32px;
+                display: block;
+                background: url("../images/starInActive.png");
+                background-position: center;
+                background-size: cover;
+                cursor: pointer; }
+                .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td.toFavorite a.active {
+                  background: url("../images/starActive.png"); }
+                .wrapper .page-content .pageContentWrap .mainColumn .rentTable table tbody tr td.toFavorite a:hover {
+                  background: url("../images/starActive.png"); }
         .wrapper .page-content .pageContentWrap .mainColumn .contactMap img {
           width: 100%;
           max-width: 100%; }
@@ -1156,7 +1931,7 @@ a.defaultButton {
               color: #0084C9;
               font-size: 18px;
               font-family: DINBold;
-              text-decoration: underline;
+              text-decoration: none;
               line-height: 18px;
               display: -ms-flexbox;
               display: flex;
@@ -1490,4 +2265,385 @@ a.defaultButton {
         .wrapper .page-content .pageContentWrap .mainColumn .formCalculation {
           background: #F0F5F5;
           border-radius: 3px;
-          padding: 20px; }
+          padding: 20px;
+          border: 1px solid #b5b7c7; }
+          .wrapper .page-content .pageContentWrap .mainColumn .formCalculation .formGroup {
+            -ms-flex-direction: row;
+            flex-direction: row;
+            display: -ms-flexbox;
+            display: flex; }
+            .wrapper .page-content .pageContentWrap .mainColumn .formCalculation .formGroup input {
+              outline: none;
+              width: 575px;
+              height: 38px;
+              color: #C4C5C5;
+              font-size: 16px;
+              font-family: DINRegular;
+              padding: 15px;
+              border-radius: 3px;
+              border: 1px solid #c4c5c5;
+              margin-bottom: 10px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .formCalculation .formGroup input.firstPay {
+                width: 335px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .formCalculation .formGroup input.agePay {
+                width: 335px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .formCalculation .formGroup input.captcha {
+                width: 200px;
+                margin-right: 15px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .formCalculation .formGroup textarea {
+              overflow-y: auto;
+              resize: none;
+              outline: none;
+              width: 575px;
+              color: #C4C5C5;
+              font-size: 16px;
+              font-family: DINRegular;
+              padding: 15px;
+              border-radius: 3px;
+              border: 1px solid #c4c5c5;
+              margin-bottom: 10px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .icoBlock {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          margin-bottom: 15px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .icoBlock li {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            color: #3D3C3C;
+            font-size: 18px;
+            font-family: DINRegular;
+            margin-right: 40px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .icoBlock li img {
+              margin-right: 10px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectBlock {
+          width: 100%;
+          display: block;
+          overflow: hidden;
+          margin-bottom: 15px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectSlider {
+            width: 519px;
+            float: left;
+            overflow: hidden; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectSlider .owl-nav .owl-prev {
+              left: -35px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectSlider .owl-nav .owl-next {
+              right: -35px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectSlider .owl-dots {
+              position: absolute;
+              right: 20px;
+              bottom: 15px;
+              display: -ms-flexbox;
+              display: flex;
+              z-index: 2; }
+              .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectSlider .owl-dots .owl-dot {
+                background-color: #fff;
+                width: 12px;
+                height: 12px;
+                border: 3px solid #fff;
+                box-sizing: content-box;
+                margin-right: 5px;
+                border-radius: 50%;
+                cursor: pointer; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectSlider .owl-dots .owl-dot.active {
+                  background-color: #0084c9; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText {
+            width: 310px;
+            float: left; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable {
+              padding-left: 20px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table thead tr th {
+                color: #0084C9;
+                font-size: 18px;
+                font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table thead tr th a.starLink {
+                  margin: auto;
+                  width: 32px;
+                  height: 32px;
+                  display: block;
+                  background: url("../images/starInActive.png");
+                  background-position: center;
+                  background-size: cover;
+                  cursor: pointer; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table thead tr th a.starLink.active {
+                    background: url("../images/starActive.png"); }
+                  .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table thead tr th a.starLink:hover {
+                    background: url("../images/starActive.png"); }
+              .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td {
+                color: #3D3C3C;
+                font-size: 16px;
+                font-family: DINRegular;
+                padding: 0px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td span.price {
+                  color: #0084C9;
+                  font-size: 22px;
+                  font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td a.tableButton {
+                  margin-right: 10px;
+                  color: #575656;
+                  font-size: 14px;
+                  font-family: DINRegular;
+                  display: block;
+                  background-color: #BADEF1;
+                  padding: 10px 15px;
+                  float: left; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td a.tableButton:hover {
+                    text-decoration: underline; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td a.defaultButton {
+                  font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td hr {
+                  border: 0;
+                  border-bottom: 1px solid #C4C4C5;
+                  margin: 10px 0; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td .params {
+                  display: -ms-flexbox;
+                  display: flex;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  margin-bottom: 10px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td .params li {
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -ms-flex: auto;
+                    flex: auto;
+                    font-size: 12px;
+                    color: #3D3C3C;
+                    font-family: DINRegular; }
+                    .wrapper .page-content .pageContentWrap .mainColumn .objectBlock .objectText .flatTable table tbody tr td .params li img {
+                      margin-right: 5px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectTabs ul {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          margin-bottom: 15px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectTabs ul li {
+            text-transform: uppercase;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: 23px;
+            -ms-flex: auto;
+            flex: auto;
+            text-decoration: none;
+            outline: none; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs ul li.ui-tabs-active a {
+              font-family: DINMedium;
+              color: #FF9027;
+              text-decoration: none;
+              border-bottom: 1px dashed transparent;
+              outline: none; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs ul li a {
+              font-family: DINLight;
+              color: #0084c9;
+              border-bottom: 1px dashed #0084c9;
+              text-decoration: none;
+              outline: none; }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem h4 {
+          color: #575656;
+          font-family: DINMedium;
+          font-size: 18px;
+          font-weight: normal; }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem h5 {
+          color: #575656;
+          font-family: DINMedium;
+          font-size: 16px;
+          font-weight: normal; }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem ul {
+          margin-bottom: 15px;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem ul li {
+            color: #575656;
+            font-family: DINRegular;
+            font-size: 16px;
+            text-transform: none;
+            margin-bottom: 5px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem ul li:before {
+              content: "";
+              display: block;
+              width: 15px;
+              height: 15px;
+              background: url(../images/check.png);
+              float: left;
+              margin-right: 5px;
+              margin-top: 2px; }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable {
+          border: 1px solid #b7b9c9;
+          border-radius: 3px;
+          margin-bottom: 30px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table {
+            border-collapse: collapse;
+            width: 100%; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table thead tr {
+              background: transparent; }
+              .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table thead tr th {
+                color: #0168AF;
+                font-size: 14px;
+                font-family: DINMedium;
+                padding: 25px 0 10px 20px;
+                text-align: left; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr:nth-child(odd) {
+              background: #F0F5F5; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr td {
+              color: #575656;
+              font-size: 16px;
+              font-family: DINRegular;
+              padding: 5px 0 15px 20px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr td.type {
+              color: #575656;
+              font-family: DINMedium;
+              font-size: 16px; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr td.toFavorite {
+              padding: 0; }
+              .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr td.toFavorite a {
+                margin: auto;
+                width: 32px;
+                height: 32px;
+                display: block;
+                background: url("../images/starInActive.png");
+                background-position: center;
+                background-size: cover;
+                cursor: pointer; }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr td.toFavorite a.active {
+                  background: url("../images/starActive.png"); }
+                .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectPriceTable table tbody tr td.toFavorite a:hover {
+                  background: url("../images/starActive.png"); }
+        .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectCallbackBlock p {
+          text-align: center; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectCallbackBlock p.line1 {
+            color: #0084C9;
+            font-family: DINMedium;
+            font-size: 18px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectCallbackBlock p.line2 {
+            color: #5D6367;
+            font-size: 18px;
+            font-family: DINRegular; }
+            .wrapper .page-content .pageContentWrap .mainColumn .objectTabs div .tabsItem .objectCallbackBlock p.line2 span {
+              color: #FF9027;
+              text-transform: uppercase;
+              font-family: DINMedium; }
+        .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock {
+          width: 100%;
+          display: block;
+          overflow: hidden;
+          margin-bottom: 15px; }
+          .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap {
+            width: 360px;
+            float: left;
+            overflow: hidden; }
+            .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vachomeImage {
+              overflow: hidden;
+              margin-bottom: 20px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vachomeImage img {
+                width: 100%;
+                max-width: 100%; }
+            .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vacHomeSlider {
+              margin-bottom: 20px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vacHomeSlider .owl-nav .owl-prev {
+                left: -35px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vacHomeSlider .owl-nav .owl-next {
+                right: -35px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vacHomeSlider .owl-dots {
+                position: absolute;
+                right: 20px;
+                bottom: 15px;
+                display: -ms-flexbox;
+                display: flex;
+                z-index: 2; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vacHomeSlider .owl-dots .owl-dot {
+                  background-color: #fff;
+                  width: 12px;
+                  height: 12px;
+                  border: 3px solid #fff;
+                  box-sizing: content-box;
+                  margin-right: 5px;
+                  border-radius: 50%;
+                  cursor: pointer; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeWrap .vacHomeSlider .owl-dots .owl-dot.active {
+                    background-color: #0084c9; }
+          .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText {
+            width: 476px;
+            float: left; }
+            .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable {
+              padding-left: 40px; }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable h2 {
+                font-size: 20px;
+                font-family: DINRegular;
+                margin: 20px 0; }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table thead tr th {
+                color: #0084C9;
+                font-size: 18px;
+                font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table thead tr th a.starLink {
+                  margin: auto;
+                  width: 32px;
+                  height: 32px;
+                  display: block;
+                  background: url("../images/starInActive.png");
+                  background-position: center;
+                  background-size: cover;
+                  cursor: pointer; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table thead tr th a.starLink.active {
+                    background: url("../images/starActive.png"); }
+                  .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table thead tr th a.starLink:hover {
+                    background: url("../images/starActive.png"); }
+              .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td {
+                vertical-align: top;
+                color: #3D3C3C;
+                font-size: 16px;
+                font-family: DINRegular;
+                padding: 0px;
+                padding-bottom: 10px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td:first-child {
+                  padding-right: 20px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td.price {
+                  color: #0084c9;
+                  font-size: 22px;
+                  font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td span.price {
+                  color: #0084C9;
+                  font-size: 22px;
+                  font-family: DINBold; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td a.tableButton {
+                  width: 145px;
+                  margin-right: 10px;
+                  color: #575656;
+                  font-size: 14px;
+                  font-family: DINRegular;
+                  display: block;
+                  background-color: #BADEF1;
+                  padding: 10px 0px;
+                  text-align: center;
+                  float: left; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td a.tableButton:hover {
+                    text-decoration: underline; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td a.defaultButton {
+                  font-family: DINBold;
+                  width: 300px; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td hr {
+                  border: 0;
+                  border-bottom: 1px solid #C4C4C5;
+                  margin: 10px 0; }
+                .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td .params {
+                  display: -ms-flexbox;
+                  display: flex;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  margin-bottom: 10px; }
+                  .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td .params li {
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -ms-flex: auto;
+                    flex: auto;
+                    font-size: 12px;
+                    color: #3D3C3C;
+                    font-family: DINRegular; }
+                    .wrapper .page-content .pageContentWrap .mainColumn .vacHomeBlock .vacHomeText .flatTable table tbody tr td .params li img {
+                      margin-right: 5px; }

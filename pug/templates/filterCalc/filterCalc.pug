@@ -1,3 +1,350 @@
-mixin filterCalc()
-	.filterBlock
-		| filter
+mixin filterSecondaryMain()
+	.filterBlock.col
+		.searchBlock
+			.searchInput
+				input(placeholder="Введите название новстройки, застройщика, района, метро или локации")
+			.searchButton
+				a найти
+		.filterLine1
+			.numbersRooms
+				p Количество комнат
+				fieldset.uiCheckRadio
+					label(for="checkbox-1") Студия
+						input(type="checkbox" name="checkbox-1" id="checkbox-1")
+					label(for="checkbox-2") 1
+						input(type="checkbox" name="checkbox-2" id="checkbox-2")
+					label(for="checkbox-3") 2
+						input(type="checkbox" name="checkbox-3" id="checkbox-3")
+					label(for="checkbox-4") 3
+						input(type="checkbox" name="checkbox-4" id="checkbox-4")
+					label(for="checkbox-5") 4+
+						input(type="checkbox" name="checkbox-5" id="checkbox-5")
+			.areaFilter
+				p
+					label(for="amount") Общая площадь, м
+						sup 2
+						input#amount(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range1
+					.uiWrapSlider
+			.priceFilter
+				p
+					label(for="amount2") Стоимость
+						sup 2
+						input#amount2(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range2
+					.uiWrapSlider
+			.price
+				p Стоимость
+				fieldset
+					input#priceMin(placeholder="От" readonly)
+					label -
+					input#priceMax(placeholder="До" readonly)
+					label тыс. р.
+		.filterLine2
+			.wrapButton.selectZone
+				a.defaultButton выбрать район
+			.wrapButton.selectMetro
+				a.defaultButton выбрать метро
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Ипотека
+			.wrapButton.viewMap
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Показать объекты на карте
+mixin filterCalculation()
+	.filterBlock.bord.row
+		.firstPayBlock
+			p
+				label(for="amount5") Первоначальный платеж
+					input#amount5(type="text" readonly)
+					span тыс. р.
+				div#slider-range5
+					.uiWrapSlider
+			.filterLine1
+				label.jqLabel
+						input.jqCheckbox(type="checkbox")
+						| Новостройки
+				label.jqLabel
+						input.jqCheckbox(type="checkbox")
+						| Вторичка
+		.periodPayBlock
+			p
+				label(for="amount6") Ежемесячный платеж
+					input#amount6(type="text" readonly)
+					span тыс. р.
+				div#slider-range6
+					.uiWrapSlider
+			.filterLine1
+				a.defaultButton Подобрать
+mixin filterMainNew()
+	.filterBlock.col
+		.searchBlock
+			.searchInput
+				input(placeholder="Введите название новстройки, застройщика, района, метро или локации")
+			.searchButton
+				a найти
+		.filterLine1
+			.numbersRooms
+				p Количество комнат
+				fieldset.uiCheckRadio
+					label(for="checkbox-1") Студия
+						input(type="checkbox" name="checkbox-1" id="checkbox-1")
+					label(for="checkbox-2") 1
+						input(type="checkbox" name="checkbox-2" id="checkbox-2")
+					label(for="checkbox-3") 2
+						input(type="checkbox" name="checkbox-3" id="checkbox-3")
+					label(for="checkbox-4") 3
+						input(type="checkbox" name="checkbox-4" id="checkbox-4")
+					label(for="checkbox-5") 4+
+						input(type="checkbox" name="checkbox-5" id="checkbox-5")
+			.areaFilter
+				p
+					label(for="amount") Сдача
+						input#amount(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range4
+					.uiWrapSlider
+			.priceFilter
+				p
+					label(for="amount2") Стоимость
+						sup 2
+						input#amount2(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range2
+					.uiWrapSlider
+			.price
+				p Стоимость
+				fieldset
+					input#priceMin(placeholder="От" readonly)
+					label -
+					input#priceMax(placeholder="До" readonly)
+					label тыс. р.
+		.filterLine2
+			.wrapButton.selectZone
+				a.defaultButton выбрать район
+			.wrapButton.selectMetro
+				a.defaultButton выбрать метро
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Ипотека
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Рассрочка
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Отделка
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Субсидии
+			.wrapButton.viewMap
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Показать объекты на карте
+
+mixin filterPereustupki()
+	.filterBlock.col.bord
+		.filterLine1
+			.numbersRooms
+				p Количество комнат
+				fieldset.uiCheckRadio
+					label(for="checkbox-1") Студия
+						input(type="checkbox" name="checkbox-1" id="checkbox-1")
+					label(for="checkbox-2") 1
+						input(type="checkbox" name="checkbox-2" id="checkbox-2")
+					label(for="checkbox-3") 2
+						input(type="checkbox" name="checkbox-3" id="checkbox-3")
+					label(for="checkbox-4") 3
+						input(type="checkbox" name="checkbox-4" id="checkbox-4")
+					label(for="checkbox-5") 4+
+						input(type="checkbox" name="checkbox-5" id="checkbox-5")
+			.areaFilter
+				p
+					label(for="amount") Сдача
+						input#amount(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range4
+					.uiWrapSlider
+			.priceFilter
+				p
+					label(for="amount2") Стоимость
+						input#amount2(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range2
+					.uiWrapSlider
+			.price
+				p Стоимость
+				fieldset
+					input#priceMin(placeholder="От" readonly)
+					label -
+					input#priceMax(placeholder="До" readonly)
+					label тыс. р.
+		.filterLine2
+			.wrapButton.selectZone
+				a.defaultButton выбрать район
+			.wrapButton.selectZone
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| С отделкой
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Показать объекты на карте
+			.wrapButton.selectZone
+				a.defaultButton.search найти
+mixin filterResidential()
+	.filterBlock.col
+		.filterLine1
+			.numbersRooms
+				p Количество комнат
+				fieldset.uiCheckRadio
+					label(for="checkbox-1") Дом
+						input(type="checkbox" name="checkbox-1" id="checkbox-1")
+					label(for="checkbox-2") Коттедж
+						input(type="checkbox" name="checkbox-2" id="checkbox-2")
+					label(for="checkbox-3") Таунхауз
+						input(type="checkbox" name="checkbox-3" id="checkbox-3")
+					label(for="checkbox-4") Участок
+						input(type="checkbox" name="checkbox-4" id="checkbox-4")
+			.areaFilter
+				p
+					label(for="amount") Общая площадь, м
+						sup 2
+						input#amount(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range3
+					.uiWrapSlider
+			.priceFilter
+				p
+					label(for="amount2") Стоимость
+						sup 2
+						input#amount2(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range2
+					.uiWrapSlider
+			.price
+				p Стоимость
+				fieldset
+					input#priceMin(placeholder="От" readonly)
+					label -
+					input#priceMax(placeholder="До" readonly)
+					label тыс. р.
+		.filterLine2
+			.wrapCheckBox
+				p Площадь дома, м
+					sup 2
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| от 10 до 50
+			.wrapCheckBox
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| от 50 до 100
+			.wrapCheckBox
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| от 100 до 300
+			.wrapCheckBox
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| более 300
+			.wrapButton.mb
+				a.defaultButton выбрать район
+			.wrapCheckBox
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Показать объекты на карте
+			.wrapButton.mb
+				a.defaultButton.search найти
+mixin filterSecondaryList()
+	.filterBlock.col
+		.searchBlock
+			.searchInput
+				input(placeholder="Введите название новстройки, застройщика, района, метро или локации")
+			.searchButton
+				a найти
+		.filterLine1
+			.numbersRooms
+				p Количество комнат
+				fieldset.uiCheckRadio
+					label(for="checkbox-1") Студия
+						input(type="checkbox" name="checkbox-1" id="checkbox-1")
+					label(for="checkbox-2") 1
+						input(type="checkbox" name="checkbox-2" id="checkbox-2")
+					label(for="checkbox-3") 2
+						input(type="checkbox" name="checkbox-3" id="checkbox-3")
+					label(for="checkbox-4") 3
+						input(type="checkbox" name="checkbox-4" id="checkbox-4")
+					label(for="checkbox-5") 4+
+						input(type="checkbox" name="checkbox-5" id="checkbox-5")
+			.areaFilter
+				p
+					label(for="amount") Общая площадь, м
+						sup 2
+						input#amount(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range1
+					.uiWrapSlider
+			.priceFilter
+				p
+					label(for="amount2") Стоимость
+						sup 2
+						input#amount2(type="text" readonly style="border:0; color:#f6931f; font-weight:bold;display:none;")
+				div#slider-range2
+					.uiWrapSlider
+			.price
+				p Стоимость
+				fieldset
+					input#priceMin(placeholder="От" readonly)
+					label -
+					input#priceMax(placeholder="До" readonly)
+					label тыс. р.
+		.filterLine2
+			.wrapButton.selectZone
+				a.defaultButton выбрать район
+			.wrapButton.selectMetro
+				a.defaultButton выбрать метро
+			.wrapButton
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Ипотека
+			.wrapButton.viewMap
+				label.jqLabel
+					input.jqCheckbox(type="checkbox")
+					| Показать объекты на карте
+mixin filterObjectnew()
+	.filterBlock.row
+		.numbersRooms
+			p Количество комнат
+			fieldset.uiCheckRadio
+				label(for="checkbox-1") Студия
+					input(type="checkbox" name="checkbox-1" id="checkbox-1")
+				label(for="checkbox-2") 1
+					input(type="checkbox" name="checkbox-2" id="checkbox-2")
+				label(for="checkbox-3") 2
+					input(type="checkbox" name="checkbox-3" id="checkbox-3")
+				label(for="checkbox-4") 3
+					input(type="checkbox" name="checkbox-4" id="checkbox-4")
+				label(for="checkbox-5") 4+
+					input(type="checkbox" name="checkbox-5" id="checkbox-5")
+			label.jqLabel
+				input.jqCheckbox(type="checkbox")
+				| Корпус 1
+			label.jqLabel
+				input.jqCheckbox(type="checkbox")
+				| Корпус 2
+		.area
+			p Площадь
+			fieldset
+				input(placeholder="От")
+				label -
+				input(placeholder="До")
+				label м
+					sup 2
+		.price
+			p Стоимость
+			fieldset
+				input(placeholder="От")
+				label -
+				input(placeholder="До")
+				label тыс. р.
+		.button
+			a.defaultButton показать

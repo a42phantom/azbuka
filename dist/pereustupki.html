@@ -57,7 +57,73 @@
           <h4> <span>подробнее о переуступках</span></h4>
           <div class="accordionItem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
-        <div class="filterBlock">filter</div>
+        <div class="filterBlock col bord">
+          <div class="filterLine1">
+            <div class="numbersRooms">
+              <p>Количество комнат</p>
+              <fieldset class="uiCheckRadio">
+                <label for="checkbox-1">Студия
+                  <input type="checkbox" name="checkbox-1" id="checkbox-1"/>
+                </label>
+                <label for="checkbox-2">1
+                  <input type="checkbox" name="checkbox-2" id="checkbox-2"/>
+                </label>
+                <label for="checkbox-3">2
+                  <input type="checkbox" name="checkbox-3" id="checkbox-3"/>
+                </label>
+                <label for="checkbox-4">3
+                  <input type="checkbox" name="checkbox-4" id="checkbox-4"/>
+                </label>
+                <label for="checkbox-5">4+
+                  <input type="checkbox" name="checkbox-5" id="checkbox-5"/>
+                </label>
+              </fieldset>
+            </div>
+            <div class="areaFilter">
+              <p>
+                <label for="amount">Сдача
+                  <input id="amount" type="text" readonly="readonly" style="border:0; color:#f6931f; font-weight:bold;display:none;"/>
+                </label>
+              </p>
+              <div id="slider-range4">
+                <div class="uiWrapSlider"></div>
+              </div>
+            </div>
+            <div class="priceFilter">
+              <p>
+                <label for="amount2">Стоимость
+                  <input id="amount2" type="text" readonly="readonly" style="border:0; color:#f6931f; font-weight:bold;display:none;"/>
+                </label>
+              </p>
+              <div id="slider-range2">
+                <div class="uiWrapSlider"></div>
+              </div>
+            </div>
+            <div class="price">
+              <p>Стоимость</p>
+              <fieldset>
+                <input id="priceMin" placeholder="От" readonly="readonly"/>
+                <label>-</label>
+                <input id="priceMax" placeholder="До" readonly="readonly"/>
+                <label>тыс. р.</label>
+              </fieldset>
+            </div>
+          </div>
+          <div class="filterLine2">
+            <div class="wrapButton selectZone"><a class="defaultButton">выбрать район</a></div>
+            <div class="wrapButton selectZone">
+              <label class="jqLabel">
+                <input class="jqCheckbox" type="checkbox"/>С отделкой
+              </label>
+            </div>
+            <div class="wrapButton">
+              <label class="jqLabel">
+                <input class="jqCheckbox" type="checkbox"/>Показать объекты на карте
+              </label>
+            </div>
+            <div class="wrapButton selectZone"><a class="defaultButton search">найти</a></div>
+          </div>
+        </div>
       </div>
       <div class="pageContentWrap">
         <div class="mainColumn">
@@ -355,6 +421,8 @@
     <script src="js/tabsLight.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jQueryFormStyler.min.js"></script>
+    <script src="js/jquery.silver_track.js"></script>
+    <script src="js/plugins/jquery.silver_track.navigator.js"></script>
     <script src="js/scripts.js"></script>
   </div>
 </body>

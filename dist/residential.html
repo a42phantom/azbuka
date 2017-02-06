@@ -54,13 +54,119 @@
         <div class="tabs" id="mainPageTabs">
           <ul>
             <li> <a href="#tabs1">Подбор загородной недвижимости</a></li>
-            <li> <a href="#tabs2">готовые подборки</a></li>
+            <li class="slideTabs"><a href="#tabs2">готовые подборки</a></li>
           </ul>
           <div>
             <div class="tabsItem" id="tabs1">
-              <div class="filterBlock">filter</div>
+              <div class="filterBlock col">
+                <div class="filterLine1">
+                  <div class="numbersRooms">
+                    <p>Количество комнат</p>
+                    <fieldset class="uiCheckRadio">
+                      <label for="checkbox-1">Дом
+                        <input type="checkbox" name="checkbox-1" id="checkbox-1"/>
+                      </label>
+                      <label for="checkbox-2">Коттедж
+                        <input type="checkbox" name="checkbox-2" id="checkbox-2"/>
+                      </label>
+                      <label for="checkbox-3">Таунхауз
+                        <input type="checkbox" name="checkbox-3" id="checkbox-3"/>
+                      </label>
+                      <label for="checkbox-4">Участок
+                        <input type="checkbox" name="checkbox-4" id="checkbox-4"/>
+                      </label>
+                    </fieldset>
+                  </div>
+                  <div class="areaFilter">
+                    <p>
+                      <label for="amount">Общая площадь, м<sup>2</sup>
+                        <input id="amount" type="text" readonly="readonly" style="border:0; color:#f6931f; font-weight:bold;display:none;"/>
+                      </label>
+                    </p>
+                    <div id="slider-range3">
+                      <div class="uiWrapSlider"></div>
+                    </div>
+                  </div>
+                  <div class="priceFilter">
+                    <p>
+                      <label for="amount2">Стоимость<sup>2</sup>
+                        <input id="amount2" type="text" readonly="readonly" style="border:0; color:#f6931f; font-weight:bold;display:none;"/>
+                      </label>
+                    </p>
+                    <div id="slider-range2">
+                      <div class="uiWrapSlider"></div>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p>Стоимость</p>
+                    <fieldset>
+                      <input id="priceMin" placeholder="От" readonly="readonly"/>
+                      <label>-</label>
+                      <input id="priceMax" placeholder="До" readonly="readonly"/>
+                      <label>тыс. р.</label>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="filterLine2">
+                  <div class="wrapCheckBox">
+                    <p>Площадь дома, м<sup>2</sup></p>
+                    <label class="jqLabel">
+                      <input class="jqCheckbox" type="checkbox"/>от 10 до 50
+                    </label>
+                  </div>
+                  <div class="wrapCheckBox">
+                    <label class="jqLabel">
+                      <input class="jqCheckbox" type="checkbox"/>от 50 до 100
+                    </label>
+                  </div>
+                  <div class="wrapCheckBox">
+                    <label class="jqLabel">
+                      <input class="jqCheckbox" type="checkbox"/>от 100 до 300
+                    </label>
+                  </div>
+                  <div class="wrapCheckBox">
+                    <label class="jqLabel">
+                      <input class="jqCheckbox" type="checkbox"/>более 300
+                    </label>
+                  </div>
+                  <div class="wrapButton mb"><a class="defaultButton">выбрать район</a></div>
+                  <div class="wrapCheckBox">
+                    <label class="jqLabel">
+                      <input class="jqCheckbox" type="checkbox"/>Показать объекты на карте
+                    </label>
+                  </div>
+                  <div class="wrapButton mb"><a class="defaultButton search">найти</a></div>
+                </div>
+              </div>
             </div>
-            <div class="tabsItem" id="tabs2">2</div>
+            <div class="tabsItem slideTabs" id="tabs2">
+              <div class="owl-carousel sliderMainPageBody" id="sliderMainPageBody1">
+                <div class="item">
+                  <div class="slideDesc">
+                    <p class="offerName">таунхаус 156 м<sub>2</sub></p>
+                    <p class="offerHead">Коттеджный поселок "Зеленая радость"</p>
+                    <p class="offerText">25 километр Колтушинского шоссе. Ипотека, рассрочка, 215 ФЗ, субсидии</p>
+                    <p class="offerPrice">	от <span>2,56</span>млн.р.</p>
+                  </div><img src="images/slide1.png"/>
+                </div>
+                <div class="item">
+                  <div class="slideDesc">
+                    <p class="offerName">таунхаус 156 м<sub>2</sub></p>
+                    <p class="offerHead">Коттеджный поселок "Зеленая радость"</p>
+                    <p class="offerText">25 километр Колтушинского шоссе. Ипотека, рассрочка, 215 ФЗ, субсидии</p>
+                    <p class="offerPrice">	от <span>2,56</span>млн.р.</p>
+                  </div><img src="images/slide2.png"/>
+                </div>
+                <div class="item">
+                  <div class="slideDesc">
+                    <p class="offerName">таунхаус 156 м<sub>2</sub></p>
+                    <p class="offerHead">Коттеджный поселок "Зеленая радость"</p>
+                    <p class="offerText">25 километр Колтушинского шоссе. Ипотека, рассрочка, 215 ФЗ, субсидии</p>
+                    <p class="offerPrice">	от <span>2,56</span>млн.р.</p>
+                  </div><img src="images/slide3.png"/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -301,59 +407,9 @@
               </div>
             </div>
           </div>
-          <div class="mainTextBlock">
-            <h2>почему мы лучше других?</h2>
-            <div class="whyBestBlock">
-              <div class="whyBestItem">
-                <div class="itemImg"><img src="images/ico1.png"/></div>
-                <div class="itemText">
-                  <h4>оценка жилья</h4>
-                  <p>Хотите продать жилье? Мы поможем вас профессионально оценить квартиру или комнату. Будте уверены, с нами <span>вы не продешевите!</span></p>
-                </div>
-              </div>
-              <div class="whyBestItem">
-                <div class="itemImg"><img src="images/ico4.png"/></div>
-                <div class="itemText">
-                  <h4>огромный выбор объектов</h4>
-                  <p>Мы можем подобрать жилье под любой индивидуальный запрос. В нашей базе огромное количество квартир на вторичном рынке, среди который непременно найдется и полностью удовлетворяющий <span>всем вашим пожеланиям.</span></p>
-                </div>
-              </div>
-              <div class="whyBestItem">
-                <div class="itemImg"><img src="images/ico2.png"/></div>
-                <div class="itemText">
-                  <h4>военная ипотека</h4>
-                  <p>У нас есть специальные условия для военнослужащих. Мы знаем где самая выгодная военная ипотека, мы возьмем на себя <span>все хлопоты с оформлением документов и подбора жилья</span>для служащих в Российской Армии.</p>
-                </div>
-              </div>
-              <div class="whyBestItem">
-                <div class="itemImg"><img src="images/ico5.png"/></div>
-                <div class="itemText">
-                  <h4>расселение комуналок</h4>
-                  <p>Хотите приобрести собственное жилье в историческом центре, но не хотите самостоятельно заниматься расселением? Мы сделаем это за вас! Мы найдем каждому собственнику  вариант который удовлетворит его и вас! И в ближайшее время вы будет жить <span>в собстенной квартире в историческом центре!</span></p>
-                </div>
-              </div>
-              <div class="whyBestItem">
-                <div class="itemImg"><img src="images/ico3.png"/></div>
-                <div class="itemText">
-                  <h4>субсидии и сертификаты</h4>
-                  <p>У вас есть субсидии или сертификат на покупку жилья? Мы поможем купить вам квартиру используя ваши преимущества, мы знаем где <span>выгоднее это сделать!</span></p>
-                </div>
-              </div>
-              <div class="whyBestItem">
-                <div class="itemImg"><img src="images/ico6.png"/></div>
-                <div class="itemText">
-                  <h4>мы осуществляем юридическое сопровождение</h4>
-                  <p>Да, мы и это делаем! Что бы ни случилось, мы всегда окажем вам своевременную юридическую помощь по сделкам с недвижимостью. Просто свяжитесь с нами и <span>ваша проблема будет решена!</span></p>
-                </div>
-              </div>
-              <div class="mainTextBlockContent">
-                <h3>КАК КУПИТЬ ИЛИ ПРОДАТЬ КВАРТИРУ В СПБ БЫСТРО И ПО ОПТИМАЛЬНОЙ СТОИМОСТИ?</h3>
-                <p>Недвижимость Санкт-Петербурга и области весьма разнообразна, вниманию Клиентов представлены как современные квартиры-студии, так и роскошные двухэтажные апартаменты, уютные «двушки» или же и вовсе многокомнатные владения. С каждым днем число жилых домов в Северной Столице увеличивается, а значит, существенно расширяется и ассортимент объектов недвижимости на рынке.</p>
-                <blockquote>Как не потеряться среди всего разнообразия? У кого можно безопасно купить недвижимость в Петербурге? Где искать жилье  по оптимальной стоимости?</blockquote>
-                <p>Эти вопросы являются наиболее острыми для каждого человека, которого интересует покупка недвижимости в Петербурге. И вполне логично, что уточнить все интересующие нюансы, получить достоверную информацию и успешно купить недвижимость в Петербурге можно лишь заручившись поддержкой опытных специалистов.</p><a class="readMore">Подробнее...</a>
-              </div>
-            </div>
-          </div>
+          <h3>КУПЛЯ-ПРОДАЖА КВАРТИР В НОВОСТРОЙКАХ И ГОТОВЫХ ДОМАХ, АРЕНДА КВАРТИР, КОМНАТ, ОФИСОВ, ИНВЕСТИЦИИ В НЕДВИЖИМОСТЬ. ВСЯ НЕДВИЖИМОСТЬ САНКТ-ПЕТЕРБУРГА – АГЕНТСТВО НЕДВИЖИМОСТИ «АЗБУКА НЕДВИЖИМОСТИ»</h3>
+          <p>Специалисты нашей Компании являются настоящими профессионалами своего дела, поэтому все предложения, приведенные в разделе "Загородная недвижимость", продаются по эксклюзивным договорам с ее владельцами, что позволяет быстрее и эффективнее организовать сделку, обеспечивает высокий уровень ее безопасности как для продавца, так и для покупателя. Приобретая участок, дом, либо коттедж из нашей базы загородной недвижимости, Вы можете быть уверены, что данные объекты больше не продаются нигде, что данные объекты прошли обязательную проверку юридической службы и обладают высочайшим уровнем честности и надежности сделки.</p>
+          <p>В карточке каждого объекта недвижимости на нашем сайте Вы найдете контактный телефон агента, владеющего полной информацией об объекте, осуществляющего его показ и проведение сделки купли-продажи.</p>
         </div>
         <div class="rightColumn">
           <div class="accordion">
@@ -515,6 +571,8 @@
     <script src="js/tabsLight.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jQueryFormStyler.min.js"></script>
+    <script src="js/jquery.silver_track.js"></script>
+    <script src="js/plugins/jquery.silver_track.navigator.js"></script>
     <script src="js/scripts.js"></script>
   </div>
 </body>

@@ -2,12 +2,38 @@ mixin formCalculation(name)
 	.formCalculation
 		h4= name
 		form
-			input(type="text" placeholder="Как вас зовут?")
-			input(type="tel" placeholder="Телефон для связи")
-			input(type="email" placeholder="E-mail")
-			p Будьте уверены мы не рассылаем спам!
-			input(type="text" placeholder="Сумма первого взноса")
-			input(type="text" placeholder="Срок кредитования")
-			textarea(type="text")
-			input(type="text")
-			a.defaultButton сделать заявку
+			.formGroup 
+				input(type="text" placeholder="Как вас зовут?")
+			.formGroup 
+				input(type="tel" placeholder="Телефон для связи")
+			.formGroup 
+				input(type="email" placeholder="E-mail")
+			.formGroup 
+				p Будьте уверены мы не рассылаем спам!
+			.formGroup 
+				input(type="text" placeholder="Сумма первого взноса")
+			.formGroup 
+				input(type="text" placeholder="Срок кредитования")
+			.formGroup 
+				textarea(type="text" rows="5")
+			.formGroup 
+				input.captcha(type="text")
+				img(src="images/capcha-back.png")
+			.formGroup 
+				a.defaultButton сделать заявку
+
+mixin formSale()
+		form
+			.formGroup 
+				input(type="text" placeholder="Как вас зовут?")
+			.formGroup 
+				input(type="tel" placeholder="Телефон для связи")
+			.formGroup 
+				input(type="email" placeholder="E-mail")
+			.formGroup 
+				textarea(type="text" rows="5")
+			.formGroup 
+				input.captcha(type="text")
+				img(src="images/capcha-back.png")
+			.formGroup 
+				a.defaultButton сделать заявку
