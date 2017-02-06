@@ -16,7 +16,7 @@ h1 {
 	font-family: DINLight;
 	font-size:50px;
 	margin-top:0;
-	margin-bottom:30px;
+	margin-bottom:20px;
 	text-transform:uppercase;
 	font-weight:100;
 	a {
@@ -154,11 +154,12 @@ a.defaultButton {
 	font-size:18px;
 	display:inline-block;
 	text-transform:uppercase;
-	padding:15px 10px;
+	padding:17px 10px;
 	background-color:#0084c9;
 	border:1px solid #0168af;
 	border-radius: 3px;
 	line-height:18px;
+	font-family: DINBold;
 	&:hover {
 		background-color:#33a9e7;
 	}
@@ -942,6 +943,11 @@ a.defaultButton {
 					position: relative;
 					bottom:-1px;
 					li {
+						&:not(:first-child) {
+							a {
+								padding-left: 30px;
+							}
+						}
 						font-size:16px;
 						line-height: 16px;
 						color:#0084c9;
@@ -970,6 +976,9 @@ a.defaultButton {
 						&.slideTabs{}
 						&.ui-tabs-active {
 							z-index:15;
+							a {
+								padding-left: 20px;
+							}
 							&.slideTabs{
 								background-color:#0084c9;
 								color:#fff;
@@ -1388,6 +1397,7 @@ a.defaultButton {
 							font-size:14px;
 							b {
 								font-family:DINBold;
+								display: inline;
 							}
 						}
 					}
@@ -1452,6 +1462,7 @@ a.defaultButton {
 				flex:auto;
 				>h3 {
 					margin-top: 30px;
+					text-transform: none;
 				}
 				.attentionBlock {
 					width: 565px;
@@ -1573,6 +1584,15 @@ a.defaultButton {
 						position: relative;
 						bottom:-3px;
 						>li {
+							outline: none;
+							&:not(:first-child) {
+								a {
+									padding-left:30px;
+								}
+							}
+							&:not(:last-child):after {
+				        box-shadow: 8px 4px 26px -9px #000;
+							}
 							font-size:16px;
 							line-height: 16px;
 							color:#0084c9;
@@ -1587,6 +1607,7 @@ a.defaultButton {
 							position: relative;
 							border-width:3px;
 							a {
+								font-family: DINRegular;
 								padding:20px;
 								color:#0084c9;
 								display: block;
@@ -1607,6 +1628,9 @@ a.defaultButton {
 								color:#0084c9;
 								z-index:13;
 								border-color: #0084c9;
+								a {
+									padding-left: 20px;
+								}
 							}
 							&.ui-tabs-active:after,&.ui-tabs-active:before {
 								z-index:-1;
@@ -1704,7 +1728,7 @@ a.defaultButton {
 					.specialOffersItem {
 						width:235px;
 						flex: 1 auto;
-						margin:15px 20px;
+						margin:10px 20px;
 						&.start {
 							&:before {
 								content: "Старт продаж";
@@ -1997,7 +2021,7 @@ a.defaultButton {
 					}
 				}
 				.mainTextBlock {
-					margin-top:30px;
+					margin-top:20px;
 					margin-bottom:30px;
 					h4 {
 						color: #0084C9;
@@ -2087,7 +2111,7 @@ a.defaultButton {
 					}
 				}
 				.listBlockButton {
-					margin-top:30px;
+					margin-top:20px;
 					p {
 						color: #0084C9;
 						font-size: 20px;
@@ -2099,6 +2123,8 @@ a.defaultButton {
 						flex-direction:row;
 						a {
 							margin-right:25px;
+							height: 55px;
+					    padding: 17px 10px;
 						}
 					}
 				}
@@ -2152,8 +2178,8 @@ a.defaultButton {
 					}
 				}
 				.searchList {
-					margin-top:30px;
-					margin-bottom: 30px;
+					margin-top:20px;
+					margin-bottom: 20px;
 					table {
 						width: 100%;
 						border-collapse: collapse;
@@ -2189,6 +2215,7 @@ a.defaultButton {
 								td.typeAppartament {}
 								td.address {}
 								td.name {
+									width: 180px;
 									a {
 										color: #0084C9;
 										font-size: 14px;
@@ -2200,16 +2227,24 @@ a.defaultButton {
 										}
 									}
 								}
-								td.metro {}
-								td.deadline {}
+								td.metro {
+									width: 130px;
+								}
+								td.deadline {
+									width: 100px;
+								}
 								td.typeHouse {}
 								td.floor {}
 								td.totalArea {}
 								td.kitchenArea {}
-								td.agent {}
+								td.agent {
+									width: 135px;
+								}
 								td.decor {}
 								td.plan {}
-								td.price {}
+								td.price {
+									width: 100px;
+								}
 								td.toFavorite {
 									a {
 										margin: auto;
@@ -2326,7 +2361,7 @@ a.defaultButton {
 					}
 				}
 				.historyBack {
-					margin-bottom: 30px;
+					margin-bottom: 20px;
 					display: flex;
 					flex-direction:row;
 					&:nth-last-child(1) {
@@ -2412,14 +2447,16 @@ a.defaultButton {
 												font-family: DINBold;
 											}
 											a.tableButton {
-												margin-right:10px;
-												color: #5D6367;
-												font-size: 14px;
-												font-family: DINRegular;
-												display: block;
-												background-color: #BADEF1;
-												padding: 10px 15px;
-												float:left;
+												margin-right: 10px;
+										    color: #5D6367;
+										    font-size: 14px;
+										    font-family: DINRegular;
+										    display: block;
+										    background-color: #BADEF1;
+										    padding: 10px 0px;
+										    float: left;
+										    width: 150px;
+										    text-align: center;
 												&:hover {
 													text-decoration: underline;
 												}
@@ -2430,7 +2467,7 @@ a.defaultButton {
 											hr {
 												border:0;
 												border-bottom:1px solid #C4C4C5;
-												margin:10px 0;
+												margin:5px 0;
 											}
 											.params {
 												display: flex;
@@ -2466,8 +2503,25 @@ a.defaultButton {
 								text-align: center;
 							}
 							ul {
-								width: 100%;
-								border:1px solid #adb0bf;
+								width: 96%;
+						    border: 1px solid #adb0bf;
+						    position: relative;
+						    z-index: 2;
+						    border-top: 0;
+						    margin-top: 18px;
+						    margin-left: 3px;
+								&:before {
+									content: "";
+							    display: block;
+							    width: 100px;
+							    height: 26px;
+							    background: url(../images/roof.png);
+							    position: absolute;
+							    top: -18px;
+							    left: 0px;
+							    z-index: 1;
+							    background-repeat: no-repeat;
+								}
 								li {
 									text-align: center;
 									border-bottom:1px solid #d8dddd;
@@ -2505,6 +2559,7 @@ a.defaultButton {
 						}
 					}
 					.aboutTextContent {
+						overflow: hidden;
 						h5 {
 							color: #575656;
 							font-size: 16px;
@@ -2536,12 +2591,12 @@ a.defaultButton {
 				.compareBlock {
 					display: flex;
 					p {
-						margin-bottom:15px;
+						margin-bottom:10px;
 						color: #5D6367;
 						font-size: 12px;
 						font-family: DINRegular;
 						&.blue {
-							margin:0;
+							margin-bottom:10px;
 							color: #0168AF;
 							font-family: DINMedium;
 						}
@@ -2618,7 +2673,7 @@ a.defaultButton {
 								color: #FFF;
 								font-size: 14px;
 								font-family: DINBold;
-								padding:12px 9px;
+								padding:8px 9px;
 							}
 							a.removeButton {
 								color: #9B9B9B;
@@ -2678,14 +2733,15 @@ a.defaultButton {
 					width: 100%;
 					padding-left:180px;
 					a.sendmailButton {
-						font-size: 14px;
-						color: #5D6367;
-						font-family: DINRegular;
-						display: inline-block;
-						padding: 15px;
-		        border-radius: 3px;
-		        cursor: pointer;
-		        background: #badef1;
+				    font-size: 14px;
+				    line-height: 14px;
+				    color: #5D6367;
+				    font-family: DINRegular;
+				    display: inline-block;
+				    padding: 10px 10px 12px 10px;
+				    border-radius: 3px;
+				    cursor: pointer;
+				    background: #badef1;
 		        &:hover {
 		        	opacity: 0.7;
 		        }
@@ -2930,11 +2986,15 @@ a.defaultButton {
 											}
 											a.defaultButton {
 												font-family: DINBold;
+												width: 190px;
+												height: 46px;
+												padding: 13px;
+												text-align: center;
 											}
 											hr {
 												border:0;
 												border-bottom:1px solid #C4C4C5;
-												margin:10px 0;
+												margin:5px 0;
 											}
 											.params {
 												display: flex;
@@ -3237,7 +3297,7 @@ a.defaultButton {
 											hr {
 												border:0;
 												border-bottom:1px solid #C4C4C5;
-												margin:10px 0;
+												margin:5px 0;
 											}
 											.params {
 												display: flex;
